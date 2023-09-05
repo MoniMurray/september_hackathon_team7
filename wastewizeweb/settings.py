@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Tell Django where the Templates will be stored
 
-TEMPLATES_DIR = OS.PATH.JOIN(BASE_DIR, 'templates')
+TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 
 # Quick-start development settings - unsuitable for production
@@ -35,7 +35,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://git.heroku.com/wastewizeweb.git', 'localhost']
+ALLOWED_HOSTS = ['https://git.heroku.com/wastewizeweb.git', '8000-monimurray-septemberhac-4pqwxjkfxiw.ws-eu104.gitpod.io']
 
 
 # Application definition
