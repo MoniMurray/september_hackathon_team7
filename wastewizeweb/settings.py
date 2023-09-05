@@ -35,7 +35,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://git.heroku.com/wastewizeweb.git', '8000-monimurray-septemberhac-4pqwxjkfxiw.ws-eu104.gitpod.io']
+ALLOWED_HOSTS = ['wastewizeweb-b57952658889.herokuapp.com', '8000-monimurray-septemberhac-4pqwxjkfxiw.ws-eu104.gitpod.io']
 
 
 # Application definition
