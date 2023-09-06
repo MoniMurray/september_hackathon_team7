@@ -96,7 +96,7 @@ WSGI_APPLICATION = "wastewizeweb.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-development = True
+# development = True
 # if development:
 #     DATABASES = {
 #         "default": {
@@ -105,9 +105,7 @@ development = True
 #         }
 #     }
 # else:
-    DATABASES = {
-        "default": dj_database_url.parse(os.environ.get("DATABASE_URL"))
-    # }
+DATABASES = {"default": dj_database_url.parse(os.environ.get("DATABASE_URL"))}
 
 
 # Password validation
