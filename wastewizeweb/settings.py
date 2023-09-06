@@ -40,6 +40,7 @@ ALLOWED_HOSTS = [
     "localhost",
     "wastewizeweb-b57952658889.herokuapp.com",
     "8000-monimurray-septemberhac-4pqwxjkfxiw.ws-eu104.gitpod.io",
+    '8000-obione84-septemberhacka-7ci0madqrlm.ws-eu104.gitpod.io',
 ]
 
 X_FRAME_OPTIONS = "SAMEORIGIN"
