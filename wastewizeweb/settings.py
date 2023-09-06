@@ -36,10 +36,13 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "")
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "localhost",
     "wastewizeweb-b57952658889.herokuapp.com",
     "8000-monimurray-septemberhac-4pqwxjkfxiw.ws-eu104.gitpod.io",
 ]
 
+X_FRAME_OPTIONS = "SAMEORIGIN"
 
 # Application definition
 
@@ -93,15 +96,16 @@ WSGI_APPLICATION = "wastewizeweb.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
+# development = True
 # if development:
 #     DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.sqlite3',
-#             'NAME': BASE_DIR / 'db.sqlite3',
-#             }
+#         "default": {
+#             "ENGINE": "django.db.backends.sqlite3",
+#             "NAME": BASE_DIR / "db.sqlite3",
 #         }
+#     }
 # else:
+
 DATABASES = {"default": dj_database_url.parse(os.environ.get("DATABASE_URL"))}
 
 
