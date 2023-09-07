@@ -25,8 +25,93 @@
 			{% block content %}
 			{% endblock %}
 		</main>
+    
+    
+    <!--  Temporarily the Calculator gets here until it gets its own app -->
+    
+    <!-- Start  Calculator --> 
+    
+    <!-- calculator -->
+	<section class="calculator">
+		<div class="`container-fluid">
+			<div class="row">
+				<div class="col-12 col-md-6">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th scope="col"></th>
+								<th scope="col">Input</th>
+								<th scope="col">Rate</th>
+								<th scope="col">Result</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">Diary</th>
+								<td>
+									<div class="input-group">
+										<input type="text" class="form-control numbers" id="number1"
+											aria-label="Weight in grams">
+										<span class="input-group-text">gm</span>
+									</div>
+								</td>
+								<td class="rates" id="rate1">1.762</td>
+								<td>
+									<div class="input-group">
+										<span class="results" id="result1">0</span>
+										<span class="input-group-text">gCO2e</span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">Beef</th>
+								<td>
+									<div class="input-group">
+										<input type="text" id="number2" class="form-control numbers"
+											aria-label="Weight in grams">
+										<span class="input-group-text">gm</span>
+									</div>
+								</td>
+								<td class="rates" id="rate2">4.333</td>
+								<td>
+									<div class="input-group">
+										<span class="results" id="result2">0</span>
+										<span class="input-group-text">gCO2e</span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Jacob</td>
+								<td>Thornton</td>
+								<td>@fat</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td colspan="2">Larry the Bird</td>
+								<td>@twitter</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-6">
+
+				</div>
+			</div>
+		</div>
+	</section>
+    
+   <div id="css-test">
+		ABC
+	</div>
+
+	<script src="../calculator.js"></script>
+    
+    <!-- End Calculator --> 
+
 
     {% block javascript %} 
 		{% endblock %}
   </body>
 </html>
+
