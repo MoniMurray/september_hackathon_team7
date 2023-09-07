@@ -1,7 +1,31 @@
+
 {% extends "base.html" %}
+
+{% load static %}
 
 {% block title %}Waste Wize Web{% endblock %} 
 
+
 {% block content %}
+
+<!-- Html starts here  -->
+
+
 <p> Hello, Szymon! </p>
+
+<div id="css-test">ABC</div>
+
+
+<!-- Html ends here  -->
+
+
+{% endblock %}
+
+
+
+
+{% block javascript %}
+
+<script src= " {% static 'js/calculator.js' %}"></script>
+
 {% endblock %}
