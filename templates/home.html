@@ -23,14 +23,39 @@
 	</div>
 </div>
 
-
+<!--Mission statement -->
 <div class=" max-w-4xl pb-20 flex flex-col items-center justify-center m-auto">
-
 	<h2 class="pt-12 pb-4 text-3xl  text-gray-700 text-center">Our Mission</h2>
 	<p class='px-4  '>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere ratione error adipisci laborum nostrum soluta accusamus suscipit rem eius ducimus architecto eligendi accusantium quidem totam aliquam magnam sit, delectus odio animi. Unde aperiam perspiciatis ab minus doloremque? In, natus cupiditate quibusdam totam placeat accusantium perspiciatis fuga magni architecto consequuntur!</p>
 </div>
 
-<p>Directory</p>
+<!-- Directory Dropdown Selection-->
+
+<div class='sm:pt-6 pb-24'> 
+	<h2 class='pb-4 text-3xl  text-gray-700 text-center'>Directory</h2>
+		<div class='lg:flex lg:justify-center'>
+				<div class='py-4 flex items-center justify-center'> 
+						<label for="categories" class='block mb-2 px-4 text-lg text-gray-700'>Select a category</label>
+						<select id="categories" class='text-lg py-2 px-12  text-gray-700 bg-gray-100 '> 
+							<option selected>Choose a category</option>
+							<option value="Test Category 1">Test Category 1</option>
+							<option value="Test Category 2">Test Category 2</option>
+							<option value="Test Category 3">Test Category 3</option>
+						</select>
+				</div>
+				<div class='flex items-center justify-center '> 
+					<label for="locations" class='block mb-2 px-4 text-lg text-gray-700'>Select a location</label>
+					<select id="locations" class='text-lg py-2 px-12  text-gray-700 bg-gray-100 '> 
+						<option selected>Choose a Location</option>
+						<option value="Test Location 1">Test Location 1</option>
+						<option value="Test Location 2">Test Location 2</option>
+						<option value="Test Location 3">Test Location 3</option>
+					</select>
+			</div>		
+		</div>
+</div>
+
+
 
 
 {% endblock %}
