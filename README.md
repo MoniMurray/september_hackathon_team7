@@ -107,4 +107,4 @@ Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` f
 
 Happy coding!
 
-Szymon - feature one added
+Szymon - feature one added - maybe add somehting more here.
