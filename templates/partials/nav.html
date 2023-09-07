@@ -1,9 +1,10 @@
 <nav
-  class=" fixed top-0 z-10 flex w-full flex-wrap items-center justify-between p-6 bg-opacity-0"
+  class=" fixed top-0 z-10 flex w-full flex-wrap items-center justify-between p-6 bg-opacity-0 backdrop-filter"
   x-data="{ isOpen: false }"
   @keydown.escape="isOpen = false"
   :class="{ 'shadow-lg bg-gray-700' : isOpen , 'bg-gray-400' : !isOpen}"
   aria-label='Navigation of Main Page'
+  id='navbar'
 >
   <!--Logo etc-->
   <div class="mr-6 flex flex-shrink-0 items-center text-yellow-50">
@@ -84,3 +85,34 @@
     </ul>
   </div>
 </nav>
+
+
+<script>
+console.log('well well well')
+
+const navBar = document.getElementById("nav");
+
+const offset = 400;
+
+window.addEventListener("scroll", () => {
+
+  const nav = document.getElementById('navbar')
+
+  if (window.scrollY >= offset){
+    nav.classList.add('backdrop-filter')
+    nav.classList.add('backdrop-blur-lg')
+    nav.classList.remove('bg-opacity-50')
+    nav.classList.add('bg-opacity-60')
+
+  } 
+  else {
+      nav.classList.remove('backdrop-filter')
+      nav.classList.remove('backdrop-blur-lg')
+      nav.classList.remove('bg-opacity-60')
+      nav.classList.add('bg-opacity-50')
+
+  }
+})
+
+
+</script>
