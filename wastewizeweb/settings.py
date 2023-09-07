@@ -39,7 +39,7 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
     "localhost",
     "wastewizeweb-b57952658889.herokuapp.com",
-    '8000-monimurray-septemberhac-bxbht3l0e05.ws-eu104.gitpod.io',
+    '8000-monimurray-septemberhac-2y940kvptli.ws-eu104.gitpod.io',
     '8000-obione84-septemberhacka-7ci0madqrlm.ws-eu104.gitpod.io',
 ]
 
@@ -66,6 +66,7 @@ INSTALLED_APPS = [
     "cloudinary",
     # Hackathon apps
     "home",
+    "calculator",
 ]
 
 SITE_ID = 1
