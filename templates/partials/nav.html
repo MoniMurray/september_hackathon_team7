@@ -1,8 +1,9 @@
 <nav
-  class=" fixed top-0 z-10 flex w-full flex-wrap items-center justify-between p-6 opacity-10 hover:opacity-80"
+  class=" fixed top-0 z-10 flex w-full flex-wrap items-center justify-between p-6 bg-opacity-0"
   x-data="{ isOpen: false }"
   @keydown.escape="isOpen = false"
   :class="{ 'shadow-lg bg-gray-700' : isOpen , 'bg-gray-400' : !isOpen}"
+  aria-label='Navigation of Main Page'
 >
   <!--Logo etc-->
   <div class="mr-6 flex flex-shrink-0 items-center text-yellow-50">
@@ -20,11 +21,12 @@
   <button
     @click="isOpen = !isOpen"
     type="button"
-    class="block px-2 text-gray-500 hover:text-yellow-50 focus:text-yellow-200 focus:outline-none lg:hidden"
+    class="block px-2 text-gray-100 hover:text-yellow-50 focus:text-yellow-200 focus:outline-none lg:hidden"
     :class="{ 'transition transform-180': isOpen }"
   >
+  <span class='hidden'>Navigation Toggle</span>
     <svg
-      class="h-6 w-6 fill-current"
+      class="lg:h-6 h-12 lg:w-6 w-12 fill-current"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
     >
@@ -44,30 +46,40 @@
 
   <!--Menu-->
   <div
-    class="w-full flex-grow lg:flex lg:w-auto lg:items-center"
+    class="w-full flex flex-grow lg:flex lg:w-auto lg:items-center"
     :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }"
     @click.away="isOpen = false"
     x-show.transition="true"
   >
     <ul class="list-reset flex-1 items-center justify-end pt-0 lg:flex lg:pt-0">
   
-      
-      <li class="mr-3">
+      <li class="mr-3 text-right">
         <a
-          class="hover:text-underline inline-block px-4 py-2 text-gray-600 no-underline hover:text-gray-200"
+          class="hover:text-underline inline-block px-4 py-2 font-bold text-3xl text-gray-100 no-underline hover:text-yellow-500"
+          href="{% url 'home' %}"
+          @click="isOpen = false"
+          aria-current:'home'
+          >Login
+        </a>
+      </li>
+      <li class="mr-3 text-right">
+        <a
+          class="hover:text-underline inline-block px-4 py-2 font-bold text-3xl text-gray-100 no-underline hover:text-yellow-500"
           href="{% url 'home' %}"
           @click="isOpen = false"
           >Home
         </a>
       </li>
-      <li class="mr-3">
+      <li class="mr-3 text-right">
         <a
-          class="hover:text-underline inline-block px-4 py-2 text-gray-600 no-underline hover:text-gray-200"
+          class="hover:text-underline inline-block px-4 py-2  font-bold text-3xl text-gray-100 no-underline hover:text-yellow-600"
           href="{% url 'view_calculator' %}"
           @click="isOpen = false"
           >Calculator
         </a>
       </li>
+
+      
 
     </ul>
   </div>
