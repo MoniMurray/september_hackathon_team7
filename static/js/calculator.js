@@ -4,6 +4,7 @@
 const inputs = document.getElementsByClassName("numbers");
 const rates = document.getElementsByClassName("rates");
 const times = document.getElementsByClassName("time");
+const weight = document.getElementsByClassName("weight");
 
 
 // Wait for the DOM to finish loading before running the game
@@ -16,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     for (let i = 0; i < inputs.length; i++) {
         inputs[i].addEventListener('input', main, false);
         times[i].addEventListener('input', main, false);
+        weight[i].addEventListener('input', main, false);
     }
 
     // add event lister to buttons
@@ -25,8 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function () {
             if (this.getAttribute("class") === "food-button") {
                 toggleCalculator("food", "plastic");
-            } else {
+            } else if (this.getAttribute("class") === "plastic-button") {
                 toggleCalculator("plastic", "food");
+            } else {
+                window.location.reload();
             }
         })
     }
@@ -36,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // function that calculates emission in kg CO2
 function emissionCalc() {
     for (let i = 0; i < inputs.length; i++) {
-        let result = (Number(inputs[i].value) * Number(rates[i].innerText) * Number(times[i].value)) / 1000;
+        let result = (Number(inputs[i].value) * Number(rates[i].innerText) * Number(times[i].value) * Number(weight[i].value)) / 1000;
         document.getElementsByClassName("results")[i].innerHTML = parseFloat(result).toFixed(2);
     }
 }
@@ -54,7 +58,10 @@ function totalEmssion() {
     }
 
     let sumResults = resultsNum.reduce((acc, curr) => acc + curr, 0).toFixed(2);
-    document.getElementsByClassName("total-result")[0].innerHTML = sumResults;
+    for (ind in results) {
+        document.getElementsByClassName("total-result")[ind].innerHTML = sumResults;
+    }
+    
 }
 
 // function to run all functions together
