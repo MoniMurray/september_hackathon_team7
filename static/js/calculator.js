@@ -5,6 +5,7 @@ const inputs = document.getElementsByClassName("numbers");
 const rates = document.getElementsByClassName("rates");
 const times = document.getElementsByClassName("time");
 const weight = document.getElementsByClassName("weight");
+// let rates = [1.774, 4.777, 1.774, 4.777, 1.774, 4.777, 1.774, 4.777, ];
 
 // Wait for the DOM to finish loading before running the game
 // Get the input element and add event listeners to them
@@ -42,6 +43,7 @@ function emissionCalc() {
   for (let i = 0; i < inputs.length; i++) {
     let result =
       (Number(inputs[i].value) *
+        // rates[i] *
         Number(rates[i].innerText) *
         Number(times[i].value) *
         Number(weight[i].value)) /
@@ -62,9 +64,9 @@ function totalEmssion() {
       resultsNum.push(val);
     }
   }
-
+  let totResults = document.getElementsByClassName("total-result");
   let sumResults = resultsNum.reduce((acc, curr) => acc + curr, 0).toFixed(2);
-  for (ind in results) {
+  for (ind in totResults) {
     document.getElementsByClassName("total-result")[ind].innerHTML = sumResults;
   }
 }
