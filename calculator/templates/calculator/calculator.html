@@ -20,17 +20,18 @@
 
 <div class="px-4 pt-48 pb-16 h-72 bg-gradient-to-r  from-yellow-700 to-yellow-900 shadow caluclator about-caluculator ">
 	<h1 class="px-10 text-5xl font-bold pb-8 text-gray-200 "> Calculator</h1>
-	<p class='px-10 text-lg text-gray-300 leading-loose'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+	<p class='px-10 text-lg text-gray-300 leading-loose'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+		eiusmod tempor incididunt ut labore et
 		dolore magna aliqua. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Sed
 		libero enim sed faucibus turpis in. In tellus integer feugiat scelerisque. Vel fringilla est ullamcorper
-		eget nulla facilisi etiam. 
+		eget nulla facilisi etiam.
 	</p>
 </div>
 
 
 <div class="px-10 css-test">
 	<section id="calculator">
-		
+
 		<h2 class='pt-12 px-4 pb-8 text-3xl text-gray-600'> Food </h2>
 		<div id="holder" class='overflow-x-auto'>
 			<div class="calculator calculator-food relative overflow-x-auto " id="food">
@@ -41,15 +42,21 @@
 							<th scope="col" class="px-6 py-3">Input</th>
 							<th scope="col" class="px-6 py-3">Rate</th>
 							<th scope="col" class="px-6 py-3"></th>
-							<th scope="col" class="px-6 py-3">Kg / Year</th>
+							<th scope="col" class="px-6 py-3">
+								<select name="units" id="total-view">
+									<option value="1000">KG / YEAR</option>
+									<option value="1000000">TON / YEAR</option>
+								</select></th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-							<th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Diary</th>
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Diary</th>
 							<td class="px-6 py-4">
 								<div>
-									<input type="number" class="shrink-0 numbers" aria-label="Weight in grams" placeholder="0">
+									<input type="number" class="shrink-0 numbers" aria-label="Weight in grams"
+										placeholder="0">
 									<span>
 										<select name="units" class="weight">
 											<option value="1">gm</option>
@@ -73,7 +80,9 @@
 							</td>
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-							<th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Beef</th>
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Milk
+								Alternatives</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
@@ -100,7 +109,9 @@
 							</td>
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-							<th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Poultry</th>
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white" value="">
+								Poultry</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
@@ -112,7 +123,7 @@
 									</span>
 								</div>
 							</td>
-							<td class="px-6 py-4" class="rates">4.333</td>
+							<td class="rates px-6 py-4">4.333</td>
 							<td class="px-6 py-4"> <select name="frequency" class="time">
 									<option value="365">Day</option>
 									<option value="52">Week</option>
@@ -127,7 +138,9 @@
 							</td>
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-							<th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Vegetables</th>
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Vegetables
+							</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
@@ -154,7 +167,8 @@
 							</td>
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-							<th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Bread</th>
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Bread</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
@@ -181,7 +195,9 @@
 							</td>
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-							<th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Fruits</th>
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Fruits
+							</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
@@ -193,7 +209,7 @@
 									</span>
 								</div>
 							</td>
-							<td class="px-6 py-4 rates" >4.333</td>
+							<td class="td rates px-6 py-4">4.333</td>
 							<td class="px-6 py-4"> <select name="frequency" class="time">
 									<option value="365">Day</option>
 									<option value="52">Week</option>
@@ -208,7 +224,8 @@
 							</td>
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-							<th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Beef</th>
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Beef</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
@@ -235,7 +252,8 @@
 							</td>
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-							<th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Beef</th>
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Beef</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
@@ -247,7 +265,7 @@
 									</span>
 								</div>
 							</td>
-							<td class="px-6 py-4 rates" class="rates">4.333</td>
+							<td class="rates px-6 py-4">4.333</td>
 							<td class="px-6 py-4"> <select name="frequency" class="time">
 									<option value="365">Day</option>
 									<option value="52">Week</option>
@@ -263,10 +281,11 @@
 						</tr>
 
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 final-total">
-							<th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"></th>
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"></th>
 							<td class="px-6 py-4">
 								<div>
-									<button>Reset All</button>
+									<button class="reset-button">Reset All</button>
 								</div>
 							</td>
 							<td class="px-6 py-4"></td>
@@ -286,15 +305,18 @@
 					</tbody>
 				</table>
 			</div>
-			
-		<div class="pb-40 calculator about-results">
-			<h2 class='py-8 px-4 text-4xl pb-8 text-gray-700'>Results</h2>
-			<p class='py-2 px-4 text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-				dolore magna aliqua. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Sed
-				libero enim sed faucibus turpis in. In tellus integer feugiat scelerisque. Vel fringilla est ullamcorper
-				eget nulla facilisi etiam. 
-			</p>
-		</div>
+
+			<div class="pb-40 calculator about-results">
+				<h2 class='py-8 px-4 text-4xl pb-8 text-gray-700'>Results</h2>
+				<p class='py-2 px-4 text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+					tempor incididunt ut labore et
+					dolore magna aliqua. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada.
+					Sed
+					libero enim sed faucibus turpis in. In tellus integer feugiat scelerisque. Vel fringilla est
+					ullamcorper
+					eget nulla facilisi etiam.
+				</p>
+			</div>
 	</section>
 </div>
 
