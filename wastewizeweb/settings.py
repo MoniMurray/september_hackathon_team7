@@ -39,8 +39,7 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
     "localhost",
     "wastewizeweb-b57952658889.herokuapp.com",
-    '8000-monimurray-septemberhac-2y940kvptli.ws-eu104.gitpod.io',
-
+    '8000-monimurray-septemberhac-wkzdlo59zm4.ws-eu104.gitpod.io',
     '8000-obione84-septemberhacka-3vtpuvobe32.ws-eu104.gitpod.io',
 
 ]
