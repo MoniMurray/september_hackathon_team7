@@ -7,7 +7,7 @@ from cloudinary.models import CloudinaryField
 
 class Shop(models.Model):
     username = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="blog_post")
+        User, on_delete=models.CASCADE, related_name="shop")
     shop_name = models.CharField(max_length=200)
     description = models.CharField(max_length=200)
     company_address = models.CharField(max_length=200)
