@@ -15,44 +15,41 @@
 
 <!-- Start  Calculator -->
 
+
 <!-- calculator -->
-<div class="css-test">
+
+<div class="px-4 pt-48 pb-16 h-72 bg-gradient-to-r  from-yellow-700 to-yellow-900 shadow caluclator about-caluculator ">
+	<h1 class="px-10 text-5xl font-bold pb-8 text-gray-200 "> Calculator</h1>
+	<p class='px-10 text-lg text-gray-300 leading-loose'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+		dolore magna aliqua. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Sed
+		libero enim sed faucibus turpis in. In tellus integer feugiat scelerisque. Vel fringilla est ullamcorper
+		eget nulla facilisi etiam. 
+	</p>
+</div>
+
+
+<div class="px-10 css-test">
 	<section id="calculator">
-		<div class="caluclator about-caluculator">
-			<h1>Heading</h1>
-			<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-				dolore magna aliqua. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Sed
-				libero enim sed faucibus turpis in. In tellus integer feugiat scelerisque. Vel fringilla est ullamcorper
-				eget nulla facilisi etiam. Sapien faucibus et molestie ac feugiat. Auctor augue mauris augue neque
-				gravida in fermentum. Sed felis eget velit aliquet sagittis id. Faucibus turpis in eu mi bibendum. Nulla
-				aliquet porttitor lacus luctus. Gravida in fermentum et sollicitudin ac. Lectus magna fringilla urna
-				porttitor rhoncus dolor. Magna eget est lorem ipsum dolor sit amet. Interdum varius sit amet mattis
-				vulputate. Bibendum neque egestas congue quisque egestas. Eros donec ac odio tempor orci dapibus
-				ultrices. Ante in nibh mauris cursus. Scelerisque felis imperdiet proin fermentum leo vel orci.
-			</h3>
-		</div>
-		<div class="button-holder">
-			<button class="food-button">Food</button>
-			<button class="plastic-button">Plastic</button>
-		</div>
-		<div id="holder">
-			<div class="calculator calculator-food" id="food">
-				<table>
-					<thead>
+		
+		<h2 class='pt-12 px-4 pb-8 text-3xl text-gray-600'> Food </h2>
+		<div id="holder" class='overflow-x-auto'>
+			<div class="calculator calculator-food relative overflow-x-auto " id="food">
+				<table class='table-auto w-full text-sm text-left text-gray-500 dark:text-gray-400 '>
+					<thead class='text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400'>
 						<tr>
-							<th></th>
-							<th>Input</th>
-							<th>Rate</th>
-							<th></th>
-							<th>Result</th>
+							<th scope="col" class="px-6 py-3"></th>
+							<th scope="col" class="px-6 py-3">Input</th>
+							<th scope="col" class="px-6 py-3">Rate</th>
+							<th scope="col" class="px-6 py-3"></th>
+							<th scope="col" class="px-6 py-3">Kg / Year</th>
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
-							<th>Diary</th>
-							<td>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Diary</th>
+							<td class="px-6 py-4">
 								<div>
-									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
+									<input type="number" class="shrink-0 numbers" aria-label="Weight in grams" placeholder="0">
 									<span>
 										<select name="units" class="weight">
 											<option value="1">gm</option>
@@ -61,24 +58,23 @@
 									</span>
 								</div>
 							</td>
-							<td class="rates">1.762</td>
-							<td> <select name="frequency" class="time">
+							<td class="rates px-6 py-4">1.762</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
 									<option value="365">Day</option>
 									<option value="52">Week</option>
 									<option value="12">Month</option>
 									<option value="1">Year</option>
 								</select>
 							</td>
-							<td>
+							<td class="px-6 py-4">
 								<div>
 									<span class="results">0</span>
-									<span>kg CO2 / year</span>
 								</div>
 							</td>
 						</tr>
-						<tr>
-							<th>Beef</th>
-							<td>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Beef</th>
+							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
 									<span>
@@ -89,24 +85,23 @@
 									</span>
 								</div>
 							</td>
-							<td class="rates">4.333</td>
-							<td> <select name="frequency" class="time">
+							<td class="rates px-6 py-4">4.333</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
 									<option value="365">Day</option>
 									<option value="52">Week</option>
 									<option value="12">Month</option>
 									<option value="1">Year</option>
 								</select>
 							</td>
-							<td>
+							<td class="px-6 py-4">
 								<div>
 									<span class="results">0</span>
-									<span>kg CO2 / year</span>
 								</div>
 							</td>
 						</tr>
-						<tr>
-							<th>Poultry</th>
-							<td>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Poultry</th>
+							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
 									<span>
@@ -117,24 +112,23 @@
 									</span>
 								</div>
 							</td>
-							<td class="rates">4.333</td>
-							<td> <select name="frequency" class="time">
+							<td class="px-6 py-4" class="rates">4.333</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
 									<option value="365">Day</option>
 									<option value="52">Week</option>
 									<option value="12">Month</option>
 									<option value="1">Year</option>
 								</select>
 							</td>
-							<td>
+							<td class="px-6 py-4">
 								<div>
 									<span class="results">0</span>
-									<span>kg CO2 / year</span>
 								</div>
 							</td>
 						</tr>
-						<tr>
-							<th>Vegetables</th>
-							<td>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Vegetables</th>
+							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
 									<span>
@@ -145,24 +139,23 @@
 									</span>
 								</div>
 							</td>
-							<td class="rates">4.333</td>
-							<td> <select name="frequency" class="time">
+							<td class="px-6 py-4 rates">4.333</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
 									<option value="365">Day</option>
 									<option value="52">Week</option>
 									<option value="12">Month</option>
 									<option value="1">Year</option>
 								</select>
 							</td>
-							<td>
+							<td class="px-6 py-4">
 								<div>
 									<span class="results">0</span>
-									<span>kg CO2 / year</span>
 								</div>
 							</td>
 						</tr>
-						<tr>
-							<th>Bread</th>
-							<td>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Bread</th>
+							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
 									<span>
@@ -173,24 +166,23 @@
 									</span>
 								</div>
 							</td>
-							<td class="rates">4.333</td>
-							<td> <select name="frequency" class="time">
+							<td class="px-6 py-4 rates">4.333</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
 									<option value="365">Day</option>
 									<option value="52">Week</option>
 									<option value="12">Month</option>
 									<option value="1">Year</option>
 								</select>
 							</td>
-							<td>
+							<td class="px-6 py-4">
 								<div>
 									<span class="results">0</span>
-									<span>kg CO2 / year</span>
 								</div>
 							</td>
 						</tr>
-						<tr>
-							<th>Fruits</th>
-							<td>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Fruits</th>
+							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
 									<span>
@@ -201,24 +193,23 @@
 									</span>
 								</div>
 							</td>
-							<td class="rates">4.333</td>
-							<td> <select name="frequency" class="time">
+							<td class="px-6 py-4 rates" >4.333</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
 									<option value="365">Day</option>
 									<option value="52">Week</option>
 									<option value="12">Month</option>
 									<option value="1">Year</option>
 								</select>
 							</td>
-							<td>
+							<td class="px-6 py-4">
 								<div>
 									<span class="results">0</span>
-									<span>kg CO2 / year</span>
 								</div>
 							</td>
 						</tr>
-						<tr>
-							<th>Beef</th>
-							<td>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Beef</th>
+							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
 									<span>
@@ -229,24 +220,23 @@
 									</span>
 								</div>
 							</td>
-							<td class="rates">4.333</td>
-							<td> <select name="frequency" class="time">
+							<td class="px-6 py-4 rates">4.333</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
 									<option value="365">Day</option>
 									<option value="52">Week</option>
 									<option value="12">Month</option>
 									<option value="1">Year</option>
 								</select>
 							</td>
-							<td>
+							<td class="px-6 py-4">
 								<div>
 									<span class="results">0</span>
-									<span>kg CO2 / year</span>
 								</div>
 							</td>
 						</tr>
-						<tr>
-							<th>Beef</th>
-							<td>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Beef</th>
+							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
 									<span>
@@ -257,39 +247,38 @@
 									</span>
 								</div>
 							</td>
-							<td class="rates">4.333</td>
-							<td> <select name="frequency" class="time">
+							<td class="px-6 py-4 rates" class="rates">4.333</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
 									<option value="365">Day</option>
 									<option value="52">Week</option>
 									<option value="12">Month</option>
 									<option value="1">Year</option>
 								</select>
 							</td>
-							<td>
+							<td class="px-6 py-4">
 								<div>
 									<span class="results">0</span>
-									<span>kg CO2 / year</span>
 								</div>
 							</td>
 						</tr>
 
-						<tr class="final-total">
-							<th></th>
-							<td>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 final-total">
+							<th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"></th>
+							<td class="px-6 py-4">
 								<div>
 									<button>Reset All</button>
 								</div>
 							</td>
-							<td></td>
-							<td>
+							<td class="px-6 py-4"></td>
+							<td class="px-6 py-4">
 								<div>
 									<h3>Total</h3>
 								</div>
 							</td>
-							<td>
+							<td class="px-6 py-4">
 								<div>
 									<span class="total-result">0</span>
-									<span>kg CO2 / year</span>
+									<span></span>
 								</div>
 							</td>
 						</tr>
@@ -297,280 +286,14 @@
 					</tbody>
 				</table>
 			</div>
-			<div class="calculator calculator-plastic" id="plastic">
-				<table>
-					<thead>
-						<tr>
-							<th></th>
-							<th>Input</th>
-							<th>Rate</th>
-							<th></th>
-							<th>Result</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th>Diary</th>
-							<td>
-								<div>
-									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
-									<span>
-										<select name="units" class="weight">
-											<option value="1">gm</option>
-											<option value="1000">kg</option>
-										</select>
-									</span>
-								</div>
-							</td>
-							<td class="rates">1.762</td>
-							<td> <select name="frequency" class="time">
-									<option value="365">Day</option>
-									<option value="52">Week</option>
-									<option value="12">Month</option>
-									<option value="1">Year</option>
-								</select>
-							</td>
-							<td>
-								<div>
-									<span class="results">0</span>
-									<span>kg CO2 / year</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th>Beef</th>
-							<td>
-								<div>
-									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
-									<span>
-										<select name="units" class="weight">
-											<option value="1">gm</option>
-											<option value="1000">kg</option>
-										</select>
-									</span>
-								</div>
-							</td>
-							<td class="rates">4.333</td>
-							<td> <select name="frequency" class="time">
-									<option value="365">Day</option>
-									<option value="52">Week</option>
-									<option value="12">Month</option>
-									<option value="1">Year</option>
-								</select>
-							</td>
-							<td>
-								<div>
-									<span class="results">0</span>
-									<span>kg CO2 / year</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th>Poultry</th>
-							<td>
-								<div>
-									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
-									<span>
-										<select name="units" class="weight">
-											<option value="1">gm</option>
-											<option value="1000">kg</option>
-										</select>
-									</span>
-								</div>
-							</td>
-							<td class="rates">4.333</td>
-							<td> <select name="frequency" class="time">
-									<option value="365">Day</option>
-									<option value="52">Week</option>
-									<option value="12">Month</option>
-									<option value="1">Year</option>
-								</select>
-							</td>
-							<td>
-								<div>
-									<span class="results">0</span>
-									<span>kg CO2 / year</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th>Vegetables</th>
-							<td>
-								<div>
-									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
-									<span>
-										<select name="units" class="weight">
-											<option value="1">gm</option>
-											<option value="1000">kg</option>
-										</select>
-									</span>
-								</div>
-							</td>
-							<td class="rates">4.333</td>
-							<td> <select name="frequency" class="time">
-									<option value="365">Day</option>
-									<option value="52">Week</option>
-									<option value="12">Month</option>
-									<option value="1">Year</option>
-								</select>
-							</td>
-							<td>
-								<div>
-									<span class="results">0</span>
-									<span>kg CO2 / year</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th>Bread</th>
-							<td>
-								<div>
-									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
-									<span>
-										<select name="units" class="weight">
-											<option value="1">gm</option>
-											<option value="1000">kg</option>
-										</select>
-									</span>
-								</div>
-							</td>
-							<td class="rates">4.333</td>
-							<td> <select name="frequency" class="time">
-									<option value="365">Day</option>
-									<option value="52">Week</option>
-									<option value="12">Month</option>
-									<option value="1">Year</option>
-								</select>
-							</td>
-							<td>
-								<div>
-									<span class="results">0</span>
-									<span>kg CO2 / year</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th>Fruits</th>
-							<td>
-								<div>
-									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
-									<span>
-										<select name="units" class="weight">
-											<option value="1">gm</option>
-											<option value="1000">kg</option>
-										</select>
-									</span>
-								</div>
-							</td>
-							<td class="rates">4.333</td>
-							<td> <select name="frequency" class="time">
-									<option value="365">Day</option>
-									<option value="52">Week</option>
-									<option value="12">Month</option>
-									<option value="1">Year</option>
-								</select>
-							</td>
-							<td>
-								<div>
-									<span class="results">0</span>
-									<span>kg CO2 / year</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th>Beef</th>
-							<td>
-								<div>
-									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
-									<span>
-										<select name="units" class="weight">
-											<option value="1">gm</option>
-											<option value="1000">kg</option>
-										</select>
-									</span>
-								</div>
-							</td>
-							<td class="rates">4.333</td>
-							<td> <select name="frequency" class="time">
-									<option value="365">Day</option>
-									<option value="52">Week</option>
-									<option value="12">Month</option>
-									<option value="1">Year</option>
-								</select>
-							</td>
-							<td>
-								<div>
-									<span class="results">0</span>
-									<span>kg CO2 / year</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th>Beef</th>
-							<td>
-								<div>
-									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
-									<span>
-										<select name="units" class="weight">
-											<option value="1">gm</option>
-											<option value="1000">kg</option>
-										</select>
-									</span>
-								</div>
-							</td>
-							<td class="rates">4.333</td>
-							<td> <select name="frequency" class="time">
-									<option value="365">Day</option>
-									<option value="52">Week</option>
-									<option value="12">Month</option>
-									<option value="1">Year</option>
-								</select>
-							</td>
-							<td>
-								<div>
-									<span class="results">0</span>
-									<span>kg CO2 / year</span>
-								</div>
-							</td>
-						</tr>
-
-						<tr class="final-total">
-							<th></th>
-							<td>
-								<div>
-									<button>Reset All</button>
-								</div>
-							</td>
-							<td></td>
-							<td>
-								<div>
-									<h3>Total</h3>
-								</div>
-							</td>
-							<td>
-								<div>
-									<span class="total-result">0</span>
-									<span>kg CO2 / year</span>
-								</div>
-							</td>
-						</tr>
-
-					</tbody>
-				</table>
-			</div>
-		</div>
-		<div class="calculator about-results">
-			<h1>Heading</h1>
-			<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+			
+		<div class="pb-40 calculator about-results">
+			<h2 class='py-8 px-4 text-4xl pb-8 text-gray-700'>Results</h2>
+			<p class='py-2 px-4 text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
 				dolore magna aliqua. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Sed
 				libero enim sed faucibus turpis in. In tellus integer feugiat scelerisque. Vel fringilla est ullamcorper
-				eget nulla facilisi etiam. Sapien faucibus et molestie ac feugiat. Auctor augue mauris augue neque
-				gravida in fermentum. Sed felis eget velit aliquet sagittis id. Faucibus turpis in eu mi bibendum. Nulla
-				aliquet porttitor lacus luctus. Gravida in fermentum et sollicitudin ac. Lectus magna fringilla urna
-				porttitor rhoncus dolor. Magna eget est lorem ipsum dolor sit amet. Interdum varius sit amet mattis
-				vulputate. Bibendum neque egestas congue quisque egestas. Eros donec ac odio tempor orci dapibus
-				ultrices. Ante in nibh mauris cursus. Scelerisque felis imperdiet proin fermentum leo vel orci.
-			</h3>
+				eget nulla facilisi etiam. 
+			</p>
 		</div>
 	</section>
 </div>
