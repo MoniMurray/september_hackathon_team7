@@ -8,8 +8,9 @@ from .forms import ShopForm
 # Create your views here.
 
 
-def view_shop_directory(request):
-    return render(request, 'shop_directory/shop.html')
+class ShopList(generic.ListView):
+    model = Shop
+    template_name = 'shop_directory/shop.html'
 
 
 def add_shop(request):
