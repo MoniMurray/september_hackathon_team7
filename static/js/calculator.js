@@ -5,6 +5,7 @@ const inputs = document.getElementsByClassName("numbers");
 const rates = document.getElementsByClassName("rates");
 const times = document.getElementsByClassName("time");
 const weight = document.getElementsByClassName("weight");
+const totals = document.getElementById("total-view");
 // let rates = [1.774, 4.777, 1.774, 4.777, 1.774, 4.777, 1.774, 4.777, ];
 
 // Wait for the DOM to finish loading before running the game
@@ -18,21 +19,23 @@ document.addEventListener("DOMContentLoaded", function () {
     inputs[i].addEventListener("input", main, false);
     times[i].addEventListener("input", main, false);
     weight[i].addEventListener("input", main, false);
+    totals.addEventListener("input", main, false);
   }
 
   // add event lister to buttons
-
   let buttons = this.getElementsByTagName("button");
   for (button of buttons) {
     button.addEventListener("click", function () {
-      if (this.getAttribute("class") === "food-button") {
+      if (this.getAttribute("class") === "reset-button") {
+        document.location.reload();
+      } else if (this.getAttribute("class") === "food-button") {
         toggleCalculator("food", "plastic");
       } else if (this.getAttribute("class") === "plastic-button") {
         toggleCalculator("plastic", "food");
       } else {
         // this line is conflicting with the hamburger button causing
         //  it to flicker. will remove it for now,
-        //window.location.reload();
+
       }
     });
   }
@@ -47,7 +50,7 @@ function emissionCalc() {
         Number(rates[i].innerText) *
         Number(times[i].value) *
         Number(weight[i].value)) /
-      1000;
+      totals.value;
     document.getElementsByClassName("results")[i].innerHTML =
       parseFloat(result).toFixed(2);
   }
