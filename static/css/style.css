@@ -1,7 +1,13 @@
-#css-test {
-    margin: 10% 10%;
-    height: 50vh;
-    background: lightblue;
+.css-test {
+    margin: 10%;
+    min-height: 80vh;
+    width: 80vw;
+    background-color: bisque;
+
+}
+
+.calculator {
+    padding: 50px;
 }
 
 td,
@@ -16,7 +22,42 @@ input {
     width: 50%;
 }
 
-.final-result tr {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
+tr:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+button {
+    height: 25px;
+    width: 160px;
+    color: brown;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: gold;
+}
+
+.food-button,
+.calculator-food {
+    background-color: lightblue;
+}
+
+.plastic-button,
+.calculator-plastic {
+    background-color: lightgreen;
+}
+
+.calculator-food {
+    display: block;
+}
+
+.calculator-plastic {
+    display: none;
+}
+
+.final-total {
+    font-size: 20px;
+    font-weight: bold;
+    border-top: 1px solid brown;
 }
