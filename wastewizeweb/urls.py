@@ -22,4 +22,5 @@ urlpatterns = [
     path("accounts/", include("allauth.urls")),
     path("", TemplateView.as_view(template_name="home.html"), name="home"),
     path("calculator/", include("calculator.urls")),
+    path("shop_directory/", include("shop_directory.urls")),
 ]

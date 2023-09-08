@@ -88,11 +88,10 @@
 
 
 <script>
-console.log('well well well')
 
 const navBar = document.getElementById("nav");
 
-const offset = 400;
+const offset = 40;
 
 window.addEventListener("scroll", () => {
 
@@ -101,15 +100,15 @@ window.addEventListener("scroll", () => {
   if (window.scrollY >= offset){
     nav.classList.add('backdrop-filter')
     nav.classList.add('backdrop-blur-lg')
-    nav.classList.remove('bg-opacity-50')
+    nav.classList.remove('bg-opacity-0')
     nav.classList.add('bg-opacity-60')
 
   } 
   else {
       nav.classList.remove('backdrop-filter')
       nav.classList.remove('backdrop-blur-lg')
+      nav.classList.add('bg-opacity-0')
       nav.classList.remove('bg-opacity-60')
-      nav.classList.add('bg-opacity-50')
 
   }
 })

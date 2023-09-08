@@ -40,7 +40,9 @@ ALLOWED_HOSTS = [
     "localhost",
     "wastewizeweb-b57952658889.herokuapp.com",
     '8000-monimurray-septemberhac-2y940kvptli.ws-eu104.gitpod.io',
+
     '8000-obione84-septemberhacka-3vtpuvobe32.ws-eu104.gitpod.io',
+
 ]
 
 X_FRAME_OPTIONS = "SAMEORIGIN"
@@ -67,6 +69,7 @@ INSTALLED_APPS = [
     # Hackathon apps
     "home",
     "calculator",
+    "shop_directory",
 ]
 
 SITE_ID = 1
