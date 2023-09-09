@@ -10,3 +10,20 @@ a {
     font-weight: bold;
     text-decoration: underline;
 }
+
+#result-low {
+    display: none;
+}
+
+#result-medium {
+    display: none;
+}
+
+#result-high {
+    display: none;
+}
+
+.eco-badge{
+    height: 10vh;
+    width: 10vh;
+}

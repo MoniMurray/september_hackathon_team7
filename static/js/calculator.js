@@ -71,6 +71,7 @@ function totalEmssion() {
   let sumResults = resultsNum.reduce((acc, curr) => acc + curr, 0).toFixed(2);
   for (ind in totResults) {
     document.getElementsByClassName("total-result")[ind].innerHTML = sumResults;
+    return sumResults;
   }
 }
 
@@ -79,6 +80,7 @@ function totalEmssion() {
 function main() {
   emissionCalc();
   totalEmssion();
+  // insertResult();
 }
 
 // funcion to toggle between calulators
@@ -90,3 +92,45 @@ function toggleCalculator(id1, id2) {
   value1.style.display = "block";
   value2.style.display = "none";
 }
+
+
+// function to display different results
+function displayDiv() {
+  let result = Number(totalEmssion());
+  let units = Number(totals.value);
+  let resultKg = result / 1000 * units;
+  let infoMessage = document.getElementById("result-info");
+  let ecoMessage = document.getElementById("result-low");
+  let medMessage = document.getElementById("result-medium");
+  let hiMessage = document.getElementById("result-medium");
+  if (resultKg < 10000) {
+    infoMessage.style.display = "none";
+    ecoMessage.style.display = "block";
+  } else if (resultKg < 17500) {
+    infoMessage.style.display = "none";
+    ecoMessage.style.display = "none";
+    medMessage.style.display = "block";
+    hiMessage.style.display = "none";
+  } else {
+    infoMessage.style.display = "none";
+    ecoMessage.style.display = "none";
+    medMessage.style.display = "none";
+    hiMessage.style.display = "block";
+  }
+  return resultKg;
+}
+
+// function to insert result into user message
+
+function insertResult() {
+  let resultKg = displayDiv().toFixed(2);
+  let span = document.getElementsByClassName("emission-result");
+  for (ind in span) {
+    span[ind].innerHTML = resultKg;
+  }
+  // span[0].innerHTML = resultKg;
+  
+}
+
+
+
