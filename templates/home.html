@@ -111,11 +111,15 @@
             <h3 class="pb-1 pt-2 text-lg font-bold text-gray-800">
               {{ shop.shop_name }}
             </h3>
-            <p class="text-md font-semibold text-gray-700">{{ shop.locations }}</p>
+            <p class="text-md font-semibold text-gray-700">{{ shop.company_address }}</p>
           </div>
           <div class="flex items-center justify-center">
             <div class="bg-gray-300">
-              <img src="" alt="Profile Image of a shop" class="" />
+              {% if "logo-placeholder" in shop.logo_image.url %}
+                <img src="{% static '/images/placeholder-img.png' %}" alt="Profile Image of a shop" class="" />
+              {% else%}
+                <img src="{{ shop.logo_image.url}}" alt="Profile Image of a shop" class="" />
+              {% endif %}
             </div>
           </div>
         </div>

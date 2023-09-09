@@ -15,7 +15,7 @@ class ShopForm(forms.ModelForm):
 
         model = Shop
         # fields = "__all__"
-        fields = ['shop_name', 'description', 'company_address', 'eircode', 'image', 'category', 'location']
+        fields = ['shop_name', 'description', 'company_address', 'eircode', 'image', 'logo_image', 'category', 'location']
 
         widgets = {
             'shop_name': forms.TextInput(),
@@ -23,6 +23,7 @@ class ShopForm(forms.ModelForm):
             'company_address': forms.TextInput(),
             'eircode': forms.TextInput(),
             'image': forms.FileInput(),
+            'logo_image': forms.FileInput(),
         }
 
     def __init__(self, *args, **kwargs):
