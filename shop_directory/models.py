@@ -13,6 +13,7 @@ class Shop(models.Model):
     company_address = models.CharField(max_length=200)
     eircode = models.CharField(max_length=10, unique=True)
     image = CloudinaryField('image', default='placeholder')
+    logo_image = CloudinaryField('logo', default='logo-placeholder')
     category = models.ForeignKey("Category", null=True, blank=True, on_delete=models.SET_NULL)
     location = models.ForeignKey("Location", null=True, blank=True, on_delete=models.SET_NULL)
 

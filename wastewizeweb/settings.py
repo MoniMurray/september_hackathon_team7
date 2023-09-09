@@ -41,7 +41,7 @@ ALLOWED_HOSTS = [
     "wastewizeweb-b57952658889.herokuapp.com",
     '8000-monimurray-septemberhac-sinsptqzybu.ws-eu104.gitpod.io',
     '8000-obione84-septemberhacka-3vtpuvobe32.ws-eu104.gitpod.io',
-    '8000-aigaa-septemberhackath-4rpm4652wcv.ws-eu104.gitpod.io',
+    '8000-aigaa-septemberhackath-84jyrvn9f1y.ws-eu104.gitpod.io',
 ]
 
 X_FRAME_OPTIONS = "SAMEORIGIN"

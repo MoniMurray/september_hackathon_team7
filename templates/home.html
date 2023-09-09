@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
+
+{% load static %}
 {% block title %}Waste Wize Web{% endblock %} 
 
 {% block content %}
@@ -110,7 +112,11 @@
       class="flex w-full flex-col rounded-xl border-2 border-gray-300 bg-gray-200 shadow"
     >
       <div class="h-32 rounded-t-xl bg-gray-400">
-        <img src="" alt="Image of a shop" class="" />
+        {% if "placeholder" in shop.image.url %}
+          <img src="{% static '/images/placeholder-img.png' %}" alt="placeholder image" class="" />
+          {% else %}
+          <img src=" {{ shop.image.url }}" alt="Image of a shop" class="" />
+        {% endif %}
       </div>
       <div>
         <div class="flex justify-between px-4">
@@ -118,18 +124,20 @@
             <h3 class="pb-1 pt-2 text-lg font-bold text-gray-800">
               {{ shop.shop_name }}
             </h3>
-            <p class="text-md font-semibold text-gray-700">{{ shop.locations }}</p>
+            <p class="text-md font-semibold text-gray-700">{{ shop.company_address }}</p>
           </div>
           <div class="flex items-center justify-center">
             <div class="bg-gray-300">
-              <img src="" alt="Profile Image of a shop" class="" />
+              {% if "logo-placeholder" in shop.logo_image.url %}
+                <img src="{% static '/images/placeholder-img.png' %}" alt="Profile Image of a shop" class="" />
+              {% else%}
+                <img src="{{ shop.logo_image.url}}" alt="Profile Image of a shop" class="" />
+              {% endif %}
             </div>
           </div>
         </div>
         <div class="px-4 py-2 text-gray-500">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo
-          optio iste adipisci pariatur saepe temporibus, amet sunt nihil maxime
-          iusto!
+          {{ shop.description }}
         </div>
       </div>
     </div>
