@@ -71,6 +71,7 @@ function totalEmssion() {
   let sumResults = resultsNum.reduce((acc, curr) => acc + curr, 0).toFixed(2);
   for (ind in totResults) {
     document.getElementsByClassName("total-result")[ind].innerHTML = sumResults;
+    return sumResults;
   }
 }
 
@@ -79,6 +80,7 @@ function totalEmssion() {
 function main() {
   emissionCalc();
   totalEmssion();
+  insertResult();
 }
 
 // funcion to toggle between calulators
@@ -96,14 +98,32 @@ function toggleCalculator(id1, id2) {
 function displayDiv() {
   let result = Number(totalEmssion());
   let units = Number(totals.value);
-  let low = 50000 / units;
-  let medium = 100000 / units;
-  if (result > 0 && result < low) {
-    console.log("Low");
-  } else if (result < medium) {
+  let resultKg = result / 1000 * units;
+  let infoMessage = document.getElementById("result-info");
+  if (resultKg < 10000) {
+    let ecoMessage = document.getElementById("result-low");
+    infoMessage.style.display = "none";
+    ecoMessage.style.display = "block";
+  } else if (resultKg < 17500) {
     console.log("Medium");
   } else {
     console.log("Hight");
+    console.log(result);
   }
+  return resultKg;
 }
+
+// function to insert result into user message
+
+function insertResult() {
+  let resultKg = displayDiv().toFixed(2);
+  let span = document.getElementsByClassName("emission-result");
+  // for (ind in span) {
+  //   span[ind].innerHTML = resultKg;
+  // }
+  span[0].innerHTML = resultKg;
+  
+}
+
+
 
