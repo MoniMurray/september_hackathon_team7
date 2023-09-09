@@ -20,30 +20,44 @@
 
 <div style="min-height:400px; " class="px-4 pt-48 pb-16 h-72 bg-gradient-to-r  from-yellow-700 to-yellow-900 shadow caluclator about-caluculator ">
 	<h1 class="px-10 text-5xl font-bold pb-8 text-gray-200 "> <i class="fas fa-calculator"></i> </i> Calculator</h1>
-	<p class='px-10 text-2xl text-gray-300 leading-loose'>How does what you eat impact the environment? Calculate
-		your
-		favourite food and drink’s carbon footprint and find out what you could substitute to make a difference.
+	<p class='px-10 text-2xl text-gray-300 leading-loose'>How does what you eat impact the environment? 
 	</p>
 	
+</div class='px-4'>
+
+<div  class='px-4 flex flex-col flex-nowrap items-left justify-center'>
+	
+	<div style='max-width: 1200px'> 
+
+		<p  class='px-10 pt-16 text-lg text-gray-600 font-bold leading-loose'>
+			Calculate
+			your
+			favourite food and drink’s carbon footprint and find out what you could substitute to make a difference.
+		</p>
+		
+
+		<p class='px-10 md:pt-10 pt-16 text-lg text-gray-600 leading-loose'>
+			The food we eat makes up a sizable portion of our individual carbon footprint – depending on where you live
+			and
+			what you dine on, it can account for between 10-30% of your household’s greenhouse gas emissions. The entire
+			food system – which includes the production, packaging, transportation and disposal of everything we eat –
+			accounts for 21-37% of all human-produced greenhouse gas emissions. By 2050, our food could account for
+			almost
+			half of all carbon emissions released by human activity unless more steps are taken to reduce its
+			environmental
+			impact.
+		</p>
+		
+		<p class='px-10 pt-8 text-lg text-gray-600 leading-loose'>
+			If you want to find out how the food you eat and throw
+			away is
+			impacting the environment, then try our calculator below.
+		</p>
+
+	</div>
 </div>
 
 
-<p class='px-10 text-lg text-gray-300 leading-loose'>
-	The food we eat makes up a sizable portion of our individual carbon footprint – depending on where you live
-	and
-	what you dine on, it can account for between 10-30% of your household’s greenhouse gas emissions. The entire
-	food system – which includes the production, packaging, transportation and disposal of everything we eat –
-	accounts for 21-37% of all human-produced greenhouse gas emissions. By 2050, our food could account for
-	almost
-	half of all carbon emissions released by human activity unless more steps are taken to reduce its
-	environmental
-	impact.
-</p>
-
-<p class='px-10 text-2xl text-gray-300 leading-loose'>If you want to find out how the food you eat and throw
-	away is
-	impacting the environment, then try our calculator below.
-</p>
 
 <div class="px-10 css-test">
 	<section id="calculator">
@@ -799,36 +813,40 @@
 					</tbody>
 				</table>
 			</div>
-			<div class="flex items-center justify-center bg-gray-400 bg-food-image bg-center bg-blend-multiply">
-				<div id="result-info" class="pb-40 calculator about-results">
-					<h2 class='py-8 px-4 text-4xl pb-8 text-gray-700'><i class="fas fa-recycle"></i> General advice on
-						how to reduce food emission</h2>
-					<p class='py-2 px-4 text-lg'>According to the recent <a
-							href="https://eatforum.org/content/uploads/2019/07/EAT-Lancet_Commission_Summary_Report.pdf"
-							target="_blank" aria-label="Link to Food, Planet and Health report.">EAT-Lancet
-							Commission</a> report on healthy,
-						sustainable diets, global consumption of fruits, vegetables, nuts and legumes will have to
-						double.
-						At the same time the amount of red meat and sugar will have to halve. Simply cutting meat and
-						dairy
-						products from their diet can reduce the carbon emissions from an individual’s foodprint by
-						two-thirds.
 
-						But some products can have surprisingly high levels of emissions. Rice production, for example,
-						leads to high levels of methane and nitrous oxide – both potent greenhouse gases – being emitted
-						into the atmosphere.
-
-						And the food you don’t eat is also important. Throwing away leftovers leads to potent greenhouse
-						gases being released into the atmosphere from landfill. According to researchers in Sweden, for
-						every 3kg of food thrown into the bin, the equivalent of 23kg of carbon dioxide is released as
-						methane gas into the atmosphere. According to one study from Italy, composting food can cut
-						those
-						emissions to just 14% while eating leftovers can cut it even further.
-					</p>
-				</div>
-			</div>
 	</section>
 </div>
+
+
+		<!--div class="flex items-center justify-center bg-gray-400 bg-food-image bg-center bg-blend-multiply"-->
+		<div class="flex items-center justify-center bg-gray-400 bg-hero-image bg-center bg-blend-multiply">
+			<div id="result-info" class="pb-40 calculator about-results">
+				<h2 class='pt-24  px-4 text-4xl pb-8 text-white font-bold'><i class="fas fa-recycle"></i> General advice on
+					how to reduce food emission</h2>
+				<p class='py-2 px-4 text-lg text-gray-100' style='line-height:1.5; max-width: 1200px'>According to the recent <a class="hover:text-yellow-700 text-yellow-300"
+						href="https://eatforum.org/content/uploads/2019/07/EAT-Lancet_Commission_Summary_Report.pdf"
+						target="_blank" aria-label="Link to Food, Planet and Health report.">EAT-Lancet
+						Commission</a> report on healthy,
+					sustainable diets, global consumption of fruits, vegetables, nuts and legumes will have to
+					double.
+					At the same time the amount of red meat and sugar will have to halve. Simply cutting meat and
+					dairy
+					products from their diet can reduce the carbon emissions from an individual’s foodprint by
+					two-thirds.
+
+					But some products can have surprisingly high levels of emissions. Rice production, for example,
+					leads to high levels of methane and nitrous oxide – both potent greenhouse gases – being emitted
+					into the atmosphere.
+
+					And the food you don’t eat is also important. Throwing away leftovers leads to potent greenhouse
+					gases being released into the atmosphere from landfill. According to researchers in Sweden, for
+					every 3kg of food thrown into the bin, the equivalent of 23kg of carbon dioxide is released as
+					methane gas into the atmosphere. According to one study from Italy, composting food can cut
+					those
+					emissions to just 14% while eating leftovers can cut it even further.
+				</p>
+			</div>
+		</div>
 <!-- <script src="{% static 'static/js/calculator.js' %}"></script> -->
 
 <!-- End Calculator -->
