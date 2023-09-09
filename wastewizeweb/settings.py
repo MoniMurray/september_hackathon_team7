@@ -39,10 +39,9 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
     "localhost",
     "wastewizeweb-b57952658889.herokuapp.com",
-    '8000-monimurray-septemberhac-sinsptqzybu.ws-eu104.gitpod.io',
-    '8000-obione84-septemberhacka-3vtpuvobe32.ws-eu104.gitpod.io',
-    '8000-aigaa-septemberhackath-3lblnd34m9b.ws-eu104.gitpod.io',
-
+    "8000-monimurray-septemberhac-sinsptqzybu.ws-eu104.gitpod.io",
+    "8000-obione84-septemberhacka-3vtpuvobe32.ws-eu104.gitpod.io",
+    "8000-aigaa-septemberhackath-3lblnd34m9b.ws-eu104.gitpod.io",
 ]
 
 X_FRAME_OPTIONS = "SAMEORIGIN"
@@ -67,15 +66,21 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "cloudinary",
     # Hackathon apps
+    "crispy_forms",
+    "crispy_tailwind",
     "home",
     "calculator",
     "shop_directory",
 ]
 
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "tailwind"
+CRISPY_TEMPLATE_PACK = "tailwind"
+
 SITE_ID = 1
 
-LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = "/"
+LOGOUT_REDIRECT_URL = "/"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -86,7 +91,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "allauth.account.middleware.AccountMiddleware"
+    "allauth.account.middleware.AccountMiddleware",
 ]
 
 ROOT_URLCONF = "wastewizeweb.urls"
@@ -112,15 +117,15 @@ WSGI_APPLICATION = "wastewizeweb.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-if 'DATABASE_URL' in os.environ:
+if "DATABASE_URL" in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        "default": dj_database_url.parse(os.environ.get("DATABASE_URL"))
     }
 else:
     DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
         }
     }
 
