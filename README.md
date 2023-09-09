@@ -2,7 +2,7 @@
 
 </h1>
 
-![Summer of Code Banner](https://res.cloudinary.com/djdefbnij/image/upload/v1693903105/Hackathons/Untitled_design_2_1_gzwakq.png)
+![SustainabiliTeam Banner](static/images/SustainabiliTeam-hack-banner.jpg)
 
 
  
@@ -33,6 +33,7 @@ WasteWizeWeb provides a map-based directory of sustainable, zero-waste businesse
 ## Features
 
 ### Landing Page
+![Landing page](static/images/hack-landing.jpg)
 
 ### Shop Directory
 
@@ -41,6 +42,11 @@ WasteWizeWeb provides a map-based directory of sustainable, zero-waste businesse
 ### Login/Register 
 
 ### Map
+
+## Future Features 
+These are items what we would like to add to the website given more time and knowledge.
+ - Google Map Api
+ - More detailed calculators categories 
 
 ## Tech
 In the tech section, we provide information about the technology stack, dependencies, and any technical details related to the project.
@@ -67,7 +73,8 @@ This project was deployed using [Herku](https://www.heroku.com/) and can be acce
 
 ## Wireframes
 
-Wireframes for the Waste Wize Web page.
+Wireframes for the Waste Wize Web page 
+![Wireframe](static/images/desktop-wireframe.png)
 
 ## Colour Scheme
 
