@@ -80,7 +80,7 @@ function totalEmssion() {
 function main() {
   emissionCalc();
   totalEmssion();
-  insertResult();
+  // insertResult();
 }
 
 // funcion to toggle between calulators
@@ -100,15 +100,22 @@ function displayDiv() {
   let units = Number(totals.value);
   let resultKg = result / 1000 * units;
   let infoMessage = document.getElementById("result-info");
+  let ecoMessage = document.getElementById("result-low");
+  let medMessage = document.getElementById("result-medium");
+  let hiMessage = document.getElementById("result-medium");
   if (resultKg < 10000) {
-    let ecoMessage = document.getElementById("result-low");
     infoMessage.style.display = "none";
     ecoMessage.style.display = "block";
   } else if (resultKg < 17500) {
-    console.log("Medium");
+    infoMessage.style.display = "none";
+    ecoMessage.style.display = "none";
+    medMessage.style.display = "block";
+    hiMessage.style.display = "none";
   } else {
-    console.log("Hight");
-    console.log(result);
+    infoMessage.style.display = "none";
+    ecoMessage.style.display = "none";
+    medMessage.style.display = "none";
+    hiMessage.style.display = "block";
   }
   return resultKg;
 }
@@ -118,10 +125,10 @@ function displayDiv() {
 function insertResult() {
   let resultKg = displayDiv().toFixed(2);
   let span = document.getElementsByClassName("emission-result");
-  // for (ind in span) {
-  //   span[ind].innerHTML = resultKg;
-  // }
-  span[0].innerHTML = resultKg;
+  for (ind in span) {
+    span[ind].innerHTML = resultKg;
+  }
+  // span[0].innerHTML = resultKg;
   
 }
 

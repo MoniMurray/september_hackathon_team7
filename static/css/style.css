@@ -10,16 +10,24 @@ a {
     font-weight: bold;
     text-decoration: underline;
 }
-
-/* #result-info {
+/* remove result info once finished */
+#result-info {
     display: none;
-} */
+}
 
 #result-low {
     display: none;
 }
 
-#low-badge{
+#result-medium {
+    display: none;
+}
+
+#result-high {
+    display: none;
+}
+
+.eco-badge{
     height: 10vh;
     width: 10vh;
 }
