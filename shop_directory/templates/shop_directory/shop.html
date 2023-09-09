@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Waste Wize Web{% endblock %}
+
+
+{% block content %}
+        
+{% for shop in shop_list %}
+<div class="max-w-sm rounded overflow-hidden shadow-lg">
+    {% if "placeholder" in post.image.url %}
+        <a href="{% url 'all_shops' %}">
+            <img class="w-full" src="" alt="placeholder">
+        </a>
+    {% else %}
+        <a href="{% url 'all_shops' %}">
+            <img class="w-full" src="{{ shop.image.url }}" alt="shop image">
+        </a>
+    {% endif %}
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2">{{ shop.shop_name }}</div>
+        <p class="text-gray-700 text-base">
+            {{ shop.description }}      
+        </p>
+    </div>
+</div>
+
+{% endfor %}
+
+{% endblock %}

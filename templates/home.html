@@ -23,7 +23,7 @@
         >Find your shop</a
       >
       <a
-        href="#"
+        href="{% url 'add_shop' %}"
         class="mb-32 mt-2 block rounded-2xl border-4 border-yellow-300 px-6 py-4 text-center text-xl font-bold uppercase text-yellow-300 shadow hover:bg-yellow-900 focus:text-gray-200"
         >Register your shop</a
       >
@@ -32,15 +32,22 @@
 </div>
 
 <!--Mission statement -->
-<div class="m-auto flex max-w-4xl flex-col items-center justify-center pb-20">
+<div class="m-auto flex max-w-4xl flex-col items-center justify-center">
   <h2 class="pb-4 pt-12 text-center text-3xl text-gray-700">Our Mission</h2>
-  <p class="px-4">
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere ratione
-    error adipisci laborum nostrum soluta accusamus suscipit rem eius ducimus
-    architecto eligendi accusantium quidem totam aliquam magnam sit, delectus
-    odio animi. Unde aperiam perspiciatis ab minus doloremque? In, natus
-    cupiditate quibusdam totam placeat accusantium perspiciatis fuga magni
-    architecto consequuntur!
+  <p class="px-4">Waste Wize Web is an interactive online directory 
+    connecting conscientious consumers with sustainable, zero-waste 
+    businesses. Search our directory for businesses in your locality, 
+    or search by category, and take steps towards a zero-waste future.<br>
+
+  </p>
+  <p class="px-4 py-4">Estimate your annual carbon footprint by calculating 
+    the carbon emissions from your food and plastic use.  
+    Our handy, easy to use <a href="{% url 'calculator' %}">calculator</a>
+    helps you visualise the savings made from every positive change.<br>
+
+  </p>
+  <p class="px-4 py-6 text-xl text-gray-700">
+    Together, we can work towards a Greener Tomorrow
   </p>
 </div>
 
@@ -51,7 +58,7 @@
   <div class="lg:flex lg:justify-center">
     <div class="flex items-center justify-center py-4">
       <label for="categories" class="mb-2 block px-4 text-lg text-gray-700"
-        >Select a category</label
+        ></label
       >
       <select
         id="categories"
@@ -65,7 +72,7 @@
     </div>
     <div class="flex items-center justify-center">
       <label for="locations" class="mb-2 block px-4 text-lg text-gray-700"
-        >Select a location</label
+        ></label
       >
       <select
         id="locations"
@@ -207,9 +214,17 @@
 
 <!-- The map where the selected shops would be displayed -->
 
-<div class="mx-8 my-16 h-96 max-w-6xl rounded bg-gray-200 md:mx-auto">
-  <p>Google Map here - you can delete this paragraph</p>
+<div style="width: 100%">
+  <iframe width="100%" height="600" frameborder="0" scrolling="no" 
+  marginheight="0" marginwidth="0" 
+  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Dublin,%20Ireland+(Dublin%20City%20and%20County)&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+  <a href="https://www.maps.ie/population/">Population mapping</a>
+</iframe>
 </div>
+<!-- <div class="mx-8 my-16 h-96 max-w-6xl rounded bg-gray-200 md:mx-auto">
+  <p>Google Map here - you can delete this paragraph</p>
+</div> -->
+
 
 <div class="py-64">Footer</div>
 

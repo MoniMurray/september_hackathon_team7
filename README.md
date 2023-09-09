@@ -73,7 +73,4 @@ Wireframes for the Waste Wize Web page.
 
 The colour palate used for the website is 
 
-## Credits
-We would like to give credit to the following individuals, organizations, and resources that have contributed to the project or provided inspiration:
-- 🌐 [External Resource 1]
-- 🌐 [External Resource 2]
+

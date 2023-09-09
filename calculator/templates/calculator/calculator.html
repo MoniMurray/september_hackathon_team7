@@ -1,9 +1,8 @@
-
 {% extends "base.html" %}
 
 {% load static %}
 
-{% block title %}Waste Wize Web{% endblock %} 
+{% block title %}Waste Wize Web{% endblock %}
 
 
 {% block content %}
@@ -11,92 +10,319 @@
 <!-- Html starts here  -->
 
 
-<p> Hello, Szymon! </p>
 
-<div id="css-test">ABC</div>
+<!--  Temporarily the Calculator gets here until it gets its own app -->
 
-   
-    <!--  Temporarily the Calculator gets here until it gets its own app -->
-    
-    <!-- Start  Calculator --> 
-    
-    <!-- calculator -->
-		<section class="calculator">
-			<div class="`container-fluid">
-				<div class="row">
-					<div class="col-12 col-md-6">
-						<table class="table table-hover">
-							<thead>
-								<tr>
-									<th scope="col"></th>
-									<th scope="col">Input</th>
-									<th scope="col">Rate</th>
-									<th scope="col">Result</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th scope="row">Diary</th>
-									<td>
-										<div class="input-group">
-											<input type="text" class="form-control numbers" id="number1"
-												aria-label="Weight in grams">
-											<span class="input-group-text">gm</span>
-										</div>
-									</td>
-									<td class="rates" id="rate1">1.762</td>
-									<td>
-										<div class="input-group">
-											<span class="results" id="result1">0</span>
-											<span class="input-group-text">gCO2e</span>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">Beef</th>
-									<td>
-										<div class="input-group">
-											<input type="text" id="number2" class="form-control numbers"
-												aria-label="Weight in grams">
-											<span class="input-group-text">gm</span>
-										</div>
-									</td>
-									<td class="rates" id="rate2">4.333</td>
-									<td>
-										<div class="input-group">
-											<span class="results" id="result2">0</span>
-											<span class="input-group-text">gCO2e</span>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">2</th>
-									<td>Jacob</td>
-									<td>Thornton</td>
-									<td>@fat</td>
-								</tr>
-								<tr>
-									<th scope="row">3</th>
-									<td colspan="2">Larry the Bird</td>
-									<td>@twitter</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="col-6">
-	
-					</div>
-				</div>
+<!-- Start  Calculator -->
+
+
+<!-- calculator -->
+
+<div class="px-4 pt-48 pb-16 h-72 bg-gradient-to-r  from-yellow-700 to-yellow-900 shadow caluclator about-caluculator ">
+	<h1 class="px-10 text-5xl font-bold pb-8 text-gray-200 "> Calculator</h1>
+	<p class='px-10 text-lg text-gray-300 leading-loose'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+		eiusmod tempor incididunt ut labore et
+		dolore magna aliqua. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Sed
+		libero enim sed faucibus turpis in. In tellus integer feugiat scelerisque. Vel fringilla est ullamcorper
+		eget nulla facilisi etiam.
+	</p>
+</div>
+
+
+<div class="px-10 css-test">
+	<section id="calculator">
+
+		<h2 class='pt-12 px-4 pb-8 text-3xl text-gray-600'> Food </h2>
+		<div id="holder" class='overflow-x-auto'>
+			<div class="calculator calculator-food relative overflow-x-auto " id="food">
+				<table class='table-auto w-full text-sm text-left text-gray-500 dark:text-gray-400 '>
+					<thead class='text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400'>
+						<tr>
+							<th scope="col" class="px-6 py-3"></th>
+							<th scope="col" class="px-6 py-3">Input</th>
+							<th scope="col" class="px-6 py-3">Rate</th>
+							<th scope="col" class="px-6 py-3"></th>
+							<th scope="col" class="px-6 py-3">
+								<select name="units" id="total-view">
+									<option value="1000">KG / YEAR</option>
+									<option value="1000000">TON / YEAR</option>
+								</select></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Diary</th>
+							<td class="px-6 py-4">
+								<div>
+									<input type="number" class="shrink-0 numbers" aria-label="Weight in grams"
+										placeholder="0">
+									<span>
+										<select name="units" class="weight">
+											<option value="1">gm</option>
+											<option value="1000">kg</option>
+										</select>
+									</span>
+								</div>
+							</td>
+							<td class="rates px-6 py-4">1.762</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
+									<option value="365">Day</option>
+									<option value="52">Week</option>
+									<option value="12">Month</option>
+									<option value="1">Year</option>
+								</select>
+							</td>
+							<td class="px-6 py-4">
+								<div>
+									<span class="results">0</span>
+								</div>
+							</td>
+						</tr>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Milk
+								Alternatives</th>
+							<td class="px-6 py-4">
+								<div>
+									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
+									<span>
+										<select name="units" class="weight">
+											<option value="1">gm</option>
+											<option value="1000">kg</option>
+										</select>
+									</span>
+								</div>
+							</td>
+							<td class="rates px-6 py-4">4.333</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
+									<option value="365">Day</option>
+									<option value="52">Week</option>
+									<option value="12">Month</option>
+									<option value="1">Year</option>
+								</select>
+							</td>
+							<td class="px-6 py-4">
+								<div>
+									<span class="results">0</span>
+								</div>
+							</td>
+						</tr>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white" value="">
+								Poultry</th>
+							<td class="px-6 py-4">
+								<div>
+									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
+									<span>
+										<select name="units" class="weight">
+											<option value="1">gm</option>
+											<option value="1000">kg</option>
+										</select>
+									</span>
+								</div>
+							</td>
+							<td class="rates px-6 py-4">4.333</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
+									<option value="365">Day</option>
+									<option value="52">Week</option>
+									<option value="12">Month</option>
+									<option value="1">Year</option>
+								</select>
+							</td>
+							<td class="px-6 py-4">
+								<div>
+									<span class="results">0</span>
+								</div>
+							</td>
+						</tr>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Vegetables
+							</th>
+							<td class="px-6 py-4">
+								<div>
+									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
+									<span>
+										<select name="units" class="weight">
+											<option value="1">gm</option>
+											<option value="1000">kg</option>
+										</select>
+									</span>
+								</div>
+							</td>
+							<td class="px-6 py-4 rates">4.333</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
+									<option value="365">Day</option>
+									<option value="52">Week</option>
+									<option value="12">Month</option>
+									<option value="1">Year</option>
+								</select>
+							</td>
+							<td class="px-6 py-4">
+								<div>
+									<span class="results">0</span>
+								</div>
+							</td>
+						</tr>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Bread</th>
+							<td class="px-6 py-4">
+								<div>
+									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
+									<span>
+										<select name="units" class="weight">
+											<option value="1">gm</option>
+											<option value="1000">kg</option>
+										</select>
+									</span>
+								</div>
+							</td>
+							<td class="px-6 py-4 rates">4.333</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
+									<option value="365">Day</option>
+									<option value="52">Week</option>
+									<option value="12">Month</option>
+									<option value="1">Year</option>
+								</select>
+							</td>
+							<td class="px-6 py-4">
+								<div>
+									<span class="results">0</span>
+								</div>
+							</td>
+						</tr>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Fruits
+							</th>
+							<td class="px-6 py-4">
+								<div>
+									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
+									<span>
+										<select name="units" class="weight">
+											<option value="1">gm</option>
+											<option value="1000">kg</option>
+										</select>
+									</span>
+								</div>
+							</td>
+							<td class="td rates px-6 py-4">4.333</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
+									<option value="365">Day</option>
+									<option value="52">Week</option>
+									<option value="12">Month</option>
+									<option value="1">Year</option>
+								</select>
+							</td>
+							<td class="px-6 py-4">
+								<div>
+									<span class="results">0</span>
+								</div>
+							</td>
+						</tr>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Beef</th>
+							<td class="px-6 py-4">
+								<div>
+									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
+									<span>
+										<select name="units" class="weight">
+											<option value="1">gm</option>
+											<option value="1000">kg</option>
+										</select>
+									</span>
+								</div>
+							</td>
+							<td class="px-6 py-4 rates">4.333</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
+									<option value="365">Day</option>
+									<option value="52">Week</option>
+									<option value="12">Month</option>
+									<option value="1">Year</option>
+								</select>
+							</td>
+							<td class="px-6 py-4">
+								<div>
+									<span class="results">0</span>
+								</div>
+							</td>
+						</tr>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Beef</th>
+							<td class="px-6 py-4">
+								<div>
+									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
+									<span>
+										<select name="units" class="weight">
+											<option value="1">gm</option>
+											<option value="1000">kg</option>
+										</select>
+									</span>
+								</div>
+							</td>
+							<td class="rates px-6 py-4">4.333</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
+									<option value="365">Day</option>
+									<option value="52">Week</option>
+									<option value="12">Month</option>
+									<option value="1">Year</option>
+								</select>
+							</td>
+							<td class="px-6 py-4">
+								<div>
+									<span class="results">0</span>
+								</div>
+							</td>
+						</tr>
+
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 final-total">
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"></th>
+							<td class="px-6 py-4">
+								<div>
+									<button class="reset-button">Reset All</button>
+								</div>
+							</td>
+							<td class="px-6 py-4"></td>
+							<td class="px-6 py-4">
+								<div>
+									<h3>Total</h3>
+								</div>
+							</td>
+							<td class="px-6 py-4">
+								<div>
+									<span class="total-result">0</span>
+									<span></span>
+								</div>
+							</td>
+						</tr>
+
+					</tbody>
+				</table>
 			</div>
-		</section>
-			
-		 <div id="css-test">
-			ABC
-		</div>
-	
-		<script src="../calculator.js"></script>
-			
-			<!-- End Calculator --> 
+
+			<div class="pb-40 calculator about-results">
+				<h2 class='py-8 px-4 text-4xl pb-8 text-gray-700'>Results</h2>
+				<p class='py-2 px-4 text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+					tempor incididunt ut labore et
+					dolore magna aliqua. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada.
+					Sed
+					libero enim sed faucibus turpis in. In tellus integer feugiat scelerisque. Vel fringilla est
+					ullamcorper
+					eget nulla facilisi etiam.
+				</p>
+			</div>
+	</section>
+</div>
+
+<!-- <script src="{% static 'static/js/calculator.js' %}"></script> -->
+
+<!-- End Calculator -->
 
 
 <!-- Html ends here  -->
@@ -109,6 +335,8 @@
 
 {% block javascript %}
 
-<script src= " {% static 'js/calculator.js' %}"></script>
+<script src="{% static 'js/calculator.js' %}"></script>
+<link rel="stylesheet" href=" {% static 'css/style.css' %}" />
+
 
 {% endblock %}
