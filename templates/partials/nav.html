@@ -54,15 +54,27 @@
   >
     <ul class="list-reset flex-1 items-center justify-end pt-0 lg:flex lg:pt-0">
   
-      <li class="mr-3 text-right">
-        <a
-          class="hover:text-underline inline-block px-4 py-2 font-bold text-3xl text-gray-100 no-underline hover:text-yellow-500"
-          href="{% url 'home' %}"
-          @click="isOpen = false"
-          aria-current:'home'
-          >Login
-        </a>
-      </li>
+      {% if request.user.is_authenticated %}
+          <li class="mr-3 text-right">
+            <a
+              class="hover:text-underline inline-block px-4 py-2 font-bold text-3xl text-gray-100 no-underline hover:text-yellow-500"
+              href="{% url 'account_logout' %}"
+              @click="isOpen = false"
+              aria-current:'login'
+              >Logout
+            </a>
+          </li>
+        {%  else %}
+
+        <li class="mr-3 text-right">
+          <a
+            class="hover:text-underline inline-block px-4 py-2 font-bold text-3xl text-gray-100 no-underline hover:text-yellow-500"
+            href="{% url 'account_login' %}"
+            >Login
+          </a>
+        </li>
+
+        {% endif  %}
       <li class="mr-3 text-right">
         <a
           class="hover:text-underline inline-block px-4 py-2 font-bold text-3xl text-gray-100 no-underline hover:text-yellow-500"

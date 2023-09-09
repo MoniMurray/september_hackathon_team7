@@ -1,0 +1,12 @@
+/* #result-info {
+    background: url('../images/calculator-background.jpg') no-repeat center center;
+    
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+} */
+
+a {
+    font-weight: bold;
+    text-decoration: underline;
+}

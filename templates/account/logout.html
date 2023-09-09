@@ -2,20 +2,34 @@
 
 {% load i18n %}
 
+{% load crispy_forms_tags %}
+
+
 {% block head_title %}{% trans "Sign Out" %}{% endblock %}
 
 {% block content %}
-<h1>{% trans "Sign Out" %}</h1>
 
-<p>{% trans 'Are you sure you want to sign out?' %}</p>
 
-<form method="post" action="{% url 'account_logout' %}">
-  {% csrf_token %}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
-  {% endif %}
-  <button type="submit">{% trans 'Sign Out' %}</button>
-</form>
+<div style='min-height:400px;'class=" px-4 pt-48 pb-16 h-72 bg-gradient-to-r  from-yellow-700 to-yellow-900 shadow caluclator about-caluculator ">
+	<h1 class="px-10 text-5xl font-bold pb-8 text-gray-200 "> Logout </h1>
+	<p class='px-10 text-lg text-gray-300 leading-loose'>Are you sure you want to sign out? 
+	</p>
+</div>
+
+
+<div class='px-12 py-12 '>
+
+  <form method="post" action="{% url 'account_logout' %}">
+    {% csrf_token %}
+    {% if redirect_field_value %}
+    <input class='font-bold' type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+    {% endif %}
+    <button class='px-12 py-4 mt-4 font-bold text-xl bg-yellow-400 hover:bg-yellow-700 hover:text-gray-200 rounded-lg shadow text-gray-700 ' type="submit">{% trans 'Sign Out' %}</button>
+  </form>
+
+</div>
+
+
 
 
 {% endblock %}

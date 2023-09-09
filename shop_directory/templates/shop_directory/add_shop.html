@@ -1,14 +1,35 @@
 {% extends "base.html" %}
 
+{% load crispy_forms_tags %}
+
 {% block title %}Waste Wize Web{% endblock %}
 
 {% block content %}
 
-    <form action="{% url 'add_shop' %}" method="post">
-        {% csrf_token %}
-        {{ form }}
-        <input type="submit" value="Submit">
-    </form>
 
+
+
+
+<div class="px-4  pt-48 pb-16 h-72 bg-gradient-to-r  from-yellow-700 to-yellow-900 shadow caluclator about-caluculator ">
+	<h1 class="px-10 text-5xl font-bold pb-8 text-gray-200 "> Add Your Shop</h1>
+	<p class='px-10 text-lg text-gray-300 leading-loose'>Fill in all details of your shop so all of our users can find you using the search function on our website!
+	</p>
+</div>
+
+
+<div class="px-10 pt-16 pb-32 ">
+
+    <div class="w-full px-4 max-w-7xl mx-auto">
+
+        <form action="{% url 'add_shop' %}" method="post">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <div class='bg-yellow-300  hover:bg-yellow-800 hover:text-yellow-100 focus:bg-yellow-900 focus:text-yellow-200 shadow mt-4 py-4 px-8 rounded-lg inline-block'>
+                <input type="submit" class="bg-blue" value="Submit">
+            </div>
+        </form>
+    </div>
+
+</div>
 
 {% endblock %}
