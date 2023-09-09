@@ -90,3 +90,20 @@ function toggleCalculator(id1, id2) {
   value1.style.display = "block";
   value2.style.display = "none";
 }
+
+
+// function to display different results
+function displayDiv() {
+  let result = Number(totalEmssion());
+  let units = Number(totals.value);
+  let low = 50000 / units;
+  let medium = 100000 / units;
+  if (result > 0 && result < low) {
+    console.log("Low");
+  } else if (result < medium) {
+    console.log("Medium");
+  } else {
+    console.log("Hight");
+  }
+}
+
