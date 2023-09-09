@@ -38,7 +38,11 @@ WasteWizeWeb provides a map-based directory of sustainable, zero-waste businesse
 
 ### Shop Directory
 
-### Calculator 
+### calculator 
+
+Where customers can up the Carbon calculator to estimate how much of a carbon footprint they produce. 
+
+![calculator](static/images/image.png)
 
 ### Login/Register 
 Where businesses and user can login and register for the website.
