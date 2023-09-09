@@ -52,15 +52,15 @@
 					<tbody>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 							<th scope="row"
-								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Diary</th>
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Milk</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="shrink-0 numbers" aria-label="Weight in grams"
 										placeholder="0">
 									<span>
 										<select name="units" class="weight">
-											<option value="1">gm</option>
-											<option value="1000">kg</option>
+											<option value="1">ml</option>
+											<option value="1000">ltr</option>
 										</select>
 									</span>
 								</div>
@@ -88,13 +88,70 @@
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
 									<span>
 										<select name="units" class="weight">
-											<option value="1">gm</option>
+											<option value="1">ml</option>
+											<option value="1000">ltr</option>
+										</select>
+									</span>
+								</div>
+							</td>
+							<td class="rates px-6 py-4">0.565</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
+									<option value="365">Day</option>
+									<option value="52">Week</option>
+									<option value="12">Month</option>
+									<option value="1">Year</option>
+								</select>
+							</td>
+							<td class="px-6 py-4">
+								<div>
+									<span class="results">0</span>
+								</div>
+							</td>
+						</tr>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Cheese</th>
+							<td class="px-6 py-4">
+								<div>
+									<input type="number" class="shrink-0 numbers" aria-label="Weight in grams"
+										placeholder="0">
+									<span>
+										<select name="units" class="weight">
+											<option value="1">gram</option>
 											<option value="1000">kg</option>
 										</select>
 									</span>
 								</div>
 							</td>
-							<td class="rates px-6 py-4">4.333</td>
+							<td class="rates px-6 py-4">8.787</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
+									<option value="365">Day</option>
+									<option value="52">Week</option>
+									<option value="12">Month</option>
+									<option value="1">Year</option>
+								</select>
+							</td>
+							<td class="px-6 py-4">
+								<div>
+									<span class="results">0</span>
+								</div>
+							</td>
+						</tr>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Vegan Cheese</th>
+							<td class="px-6 py-4">
+								<div>
+									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
+									<span>
+										<select name="units" class="weight">
+											<option value="1">gram</option>
+											<option value="1000">kg</option>
+										</select>
+									</span>
+								</div>
+							</td>
+							<td class="rates px-6 py-4">2.719</td>
 							<td class="px-6 py-4"> <select name="frequency" class="time">
 									<option value="365">Day</option>
 									<option value="52">Week</option>
@@ -111,19 +168,19 @@
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 							<th scope="row"
 								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white" value="">
-								Poultry</th>
+								Beef</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
 									<span>
 										<select name="units" class="weight">
-											<option value="1">gm</option>
+											<option value="1">gram</option>
 											<option value="1000">kg</option>
 										</select>
 									</span>
 								</div>
 							</td>
-							<td class="rates px-6 py-4">4.333</td>
+							<td class="rates px-6 py-4">43.33</td>
 							<td class="px-6 py-4"> <select name="frequency" class="time">
 									<option value="365">Day</option>
 									<option value="52">Week</option>
@@ -139,20 +196,49 @@
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 							<th scope="row"
-								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Vegetables
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white" value="">
+								Pork</th>
+							<td class="px-6 py-4">
+								<div>
+									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
+									<span>
+										<select name="units" class="weight">
+											<option value="1">gram</option>
+											<option value="1000">kg</option>
+										</select>
+									</span>
+								</div>
+							</td>
+							<td class="rates px-6 py-4">6.628</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
+									<option value="365">Day</option>
+									<option value="52">Week</option>
+									<option value="12">Month</option>
+									<option value="1">Year</option>
+								</select>
+							</td>
+							<td class="px-6 py-4">
+								<div>
+									<span class="results">0</span>
+								</div>
+							</td>
+						</tr>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Poultry
 							</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
 									<span>
 										<select name="units" class="weight">
-											<option value="1">gm</option>
+											<option value="1">gram</option>
 											<option value="1000">kg</option>
 										</select>
 									</span>
 								</div>
 							</td>
-							<td class="px-6 py-4 rates">4.333</td>
+							<td class="px-6 py-4 rates">4.706</td>
 							<td class="px-6 py-4"> <select name="frequency" class="time">
 									<option value="365">Day</option>
 									<option value="52">Week</option>
@@ -168,19 +254,19 @@
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 							<th scope="row"
-								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Bread</th>
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">White Fish</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
 									<span>
 										<select name="units" class="weight">
-											<option value="1">gm</option>
+											<option value="1">gram</option>
 											<option value="1000">kg</option>
 										</select>
 									</span>
 								</div>
 							</td>
-							<td class="px-6 py-4 rates">4.333</td>
+							<td class="px-6 py-4 rates">3.214</td>
 							<td class="px-6 py-4"> <select name="frequency" class="time">
 									<option value="365">Day</option>
 									<option value="52">Week</option>
@@ -196,20 +282,20 @@
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 							<th scope="row"
-								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Fruits
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Crustaceans
 							</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
 									<span>
 										<select name="units" class="weight">
-											<option value="1">gm</option>
+											<option value="1">gram</option>
 											<option value="1000">kg</option>
 										</select>
 									</span>
 								</div>
 							</td>
-							<td class="td rates px-6 py-4">4.333</td>
+							<td class="td rates px-6 py-4">17.74</td>
 							<td class="px-6 py-4"> <select name="frequency" class="time">
 									<option value="365">Day</option>
 									<option value="52">Week</option>
@@ -225,19 +311,19 @@
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 							<th scope="row"
-								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Beef</th>
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Tuna</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
 									<span>
 										<select name="units" class="weight">
-											<option value="1">gm</option>
+											<option value="1">gram</option>
 											<option value="1000">kg</option>
 										</select>
 									</span>
 								</div>
 							</td>
-							<td class="px-6 py-4 rates">4.333</td>
+							<td class="px-6 py-4 rates">10.17</td>
 							<td class="px-6 py-4"> <select name="frequency" class="time">
 									<option value="365">Day</option>
 									<option value="52">Week</option>
@@ -253,19 +339,19 @@
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 							<th scope="row"
-								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Beef</th>
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Meat Alternatives</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
 									<span>
 										<select name="units" class="weight">
-											<option value="1">gm</option>
+											<option value="1">gram</option>
 											<option value="1000">kg</option>
 										</select>
 									</span>
 								</div>
 							</td>
-							<td class="rates px-6 py-4">4.333</td>
+							<td class="px-6 py-4 rates">1.691</td>
 							<td class="px-6 py-4"> <select name="frequency" class="time">
 									<option value="365">Day</option>
 									<option value="52">Week</option>
@@ -279,6 +365,371 @@
 								</div>
 							</td>
 						</tr>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Legumes</th>
+							<td class="px-6 py-4">
+								<div>
+									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
+									<span>
+										<select name="units" class="weight">
+											<option value="1">gram</option>
+											<option value="1000">kg</option>
+										</select>
+									</span>
+								</div>
+							</td>
+							<td class="px-6 py-4 rates">0.852</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
+									<option value="365">Day</option>
+									<option value="52">Week</option>
+									<option value="12">Month</option>
+									<option value="1">Year</option>
+								</select>
+							</td>
+							<td class="px-6 py-4">
+								<div>
+									<span class="results">0</span>
+								</div>
+							</td>
+						</tr>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Breads</th>
+							<td class="px-6 py-4">
+								<div>
+									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
+									<span>
+										<select name="units" class="weight">
+											<option value="1">gram</option>
+											<option value="1000">kg</option>
+										</select>
+									</span>
+								</div>
+							</td>
+							<td class="px-6 py-4 rates">1.215</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
+									<option value="365">Day</option>
+									<option value="52">Week</option>
+									<option value="12">Month</option>
+									<option value="1">Year</option>
+								</select>
+							</td>
+							<td class="px-6 py-4">
+								<div>
+									<span class="results">0</span>
+								</div>
+							</td>
+						</tr>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Cakes</th>
+							<td class="px-6 py-4">
+								<div>
+									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
+									<span>
+										<select name="units" class="weight">
+											<option value="1">gram</option>
+											<option value="1000">kg</option>
+										</select>
+									</span>
+								</div>
+							</td>
+							<td class="px-6 py-4 rates">3.064</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
+									<option value="365">Day</option>
+									<option value="52">Week</option>
+									<option value="12">Month</option>
+									<option value="1">Year</option>
+								</select>
+							</td>
+							<td class="px-6 py-4">
+								<div>
+									<span class="results">0</span>
+								</div>
+							</td>
+						</tr>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Pastries</th>
+							<td class="px-6 py-4">
+								<div>
+									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
+									<span>
+										<select name="units" class="weight">
+											<option value="1">gram</option>
+											<option value="1000">kg</option>
+										</select>
+									</span>
+								</div>
+							</td>
+							<td class="px-6 py-4 rates">6.579</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
+									<option value="365">Day</option>
+									<option value="52">Week</option>
+									<option value="12">Month</option>
+									<option value="1">Year</option>
+								</select>
+							</td>
+							<td class="px-6 py-4">
+								<div>
+									<span class="results">0</span>
+								</div>
+							</td>
+						</tr>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Fruits</th>
+							<td class="px-6 py-4">
+								<div>
+									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
+									<span>
+										<select name="units" class="weight">
+											<option value="1">gram</option>
+											<option value="1000">kg</option>
+										</select>
+									</span>
+								</div>
+							</td>
+							<td class="px-6 py-4 rates">2.026</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
+									<option value="365">Day</option>
+									<option value="52">Week</option>
+									<option value="12">Month</option>
+									<option value="1">Year</option>
+								</select>
+							</td>
+							<td class="px-6 py-4">
+								<div>
+									<span class="results">0</span>
+								</div>
+							</td>
+						</tr>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Vegetables</th>
+							<td class="px-6 py-4">
+								<div>
+									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
+									<span>
+										<select name="units" class="weight">
+											<option value="1">gram</option>
+											<option value="1000">kg</option>
+										</select>
+									</span>
+								</div>
+							</td>
+							<td class="px-6 py-4 rates">2.038</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
+									<option value="365">Day</option>
+									<option value="52">Week</option>
+									<option value="12">Month</option>
+									<option value="1">Year</option>
+								</select>
+							</td>
+							<td class="px-6 py-4">
+								<div>
+									<span class="results">0</span>
+								</div>
+							</td>
+						</tr>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Snacks</th>
+							<td class="px-6 py-4">
+								<div>
+									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
+									<span>
+										<select name="units" class="weight">
+											<option value="1">gram</option>
+											<option value="1000">kg</option>
+										</select>
+									</span>
+								</div>
+							</td>
+							<td class="rates px-6 py-4">4.410</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
+									<option value="365">Day</option>
+									<option value="52">Week</option>
+									<option value="12">Month</option>
+									<option value="1">Year</option>
+								</select>
+							</td>
+							<td class="px-6 py-4">
+								<div>
+									<span class="results">0</span>
+								</div>
+							</td>
+						</tr>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Chocolate Bars</th>
+							<td class="px-6 py-4">
+								<div>
+									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
+									<span>
+										<select name="units" class="weight">
+											<option value="1">gram</option>
+											<option value="1000">kg</option>
+										</select>
+									</span>
+								</div>
+							</td>
+							<td class="rates px-6 py-4">5.763</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
+									<option value="365">Day</option>
+									<option value="52">Week</option>
+									<option value="12">Month</option>
+									<option value="1">Year</option>
+								</select>
+							</td>
+							<td class="px-6 py-4">
+								<div>
+									<span class="results">0</span>
+								</div>
+							</td>
+						</tr>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Vegan Chocolate</th>
+							<td class="px-6 py-4">
+								<div>
+									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
+									<span>
+										<select name="units" class="weight">
+											<option value="1">gram</option>
+											<option value="1000">kg</option>
+										</select>
+									</span>
+								</div>
+							</td>
+							<td class="rates px-6 py-4">1.921</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
+									<option value="365">Day</option>
+									<option value="52">Week</option>
+									<option value="12">Month</option>
+									<option value="1">Year</option>
+								</select>
+							</td>
+							<td class="px-6 py-4">
+								<div>
+									<span class="results">0</span>
+								</div>
+							</td>
+						</tr>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Rice & Pastas</th>
+							<td class="px-6 py-4">
+								<div>
+									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
+									<span>
+										<select name="units" class="weight">
+											<option value="1">gram</option>
+											<option value="1000">kg</option>
+										</select>
+									</span>
+								</div>
+							</td>
+							<td class="rates px-6 py-4">1.374</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
+									<option value="365">Day</option>
+									<option value="52">Week</option>
+									<option value="12">Month</option>
+									<option value="1">Year</option>
+								</select>
+							</td>
+							<td class="px-6 py-4">
+								<div>
+									<span class="results">0</span>
+								</div>
+							</td>
+						</tr>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Tea & Coffee</th>
+							<td class="px-6 py-4">
+								<div>
+									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
+									<span>
+										<select name="units" class="weight">
+											<option value="1">ml</option>
+											<option value="1000">lt</option>
+										</select>
+									</span>
+								</div>
+							</td>
+							<td class="rates px-6 py-4">0.706</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
+									<option value="365">Day</option>
+									<option value="52">Week</option>
+									<option value="12">Month</option>
+									<option value="1">Year</option>
+								</select>
+							</td>
+							<td class="px-6 py-4">
+								<div>
+									<span class="results">0</span>
+								</div>
+							</td>
+						</tr>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Alcoholic Drinks</th>
+							<td class="px-6 py-4">
+								<div>
+									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
+									<span>
+										<select name="units" class="weight">
+											<option value="1">ml</option>
+											<option value="1000">lt</option>
+										</select>
+									</span>
+								</div>
+							</td>
+							<td class="rates px-6 py-4">1.369</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
+									<option value="365">Day</option>
+									<option value="52">Week</option>
+									<option value="12">Month</option>
+									<option value="1">Year</option>
+								</select>
+							</td>
+							<td class="px-6 py-4">
+								<div>
+									<span class="results">0</span>
+								</div>
+							</td>
+						</tr>
+						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+							<th scope="row"
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Soft Drinks</th>
+							<td class="px-6 py-4">
+								<div>
+									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
+									<span>
+										<select name="units" class="weight">
+											<option value="1">ml</option>
+											<option value="1000">lt</option>
+										</select>
+									</span>
+								</div>
+							</td>
+							<td class="rates px-6 py-4">0.622</td>
+							<td class="px-6 py-4"> <select name="frequency" class="time">
+									<option value="365">Day</option>
+									<option value="52">Week</option>
+									<option value="12">Month</option>
+									<option value="1">Year</option>
+								</select>
+							</td>
+							<td class="px-6 py-4">
+								<div>
+									<span class="results">0</span>
+								</div>
+							</td>
+						</tr>
+
 
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 final-total">
 							<th scope="row"
