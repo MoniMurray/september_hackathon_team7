@@ -42,6 +42,11 @@ WasteWizeWeb provides a map-based directory of sustainable, zero-waste businesse
 
 ### Map
 
+## Future Features 
+These are items what we would like to add to the website given more time and knowledge.
+ - Google Map Api
+ - More detailed calculators categories 
+
 ## Tech
 In the tech section, we provide information about the technology stack, dependencies, and any technical details related to the project.
 
