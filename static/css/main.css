@@ -681,6 +681,10 @@ video {
   width: 100%;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .max-w-4xl {
   max-width: 56rem;
 }
@@ -1183,6 +1187,10 @@ h1 {
 @media (min-width: 640px) {
   .sm\:w-full {
     width: 100%;
+  }
+
+  .sm\:w-1\/2 {
+    width: 50%;
   }
 
   .sm\:px-12 {
