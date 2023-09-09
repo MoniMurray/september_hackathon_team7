@@ -38,7 +38,7 @@ WasteWizeWeb provides a map-based directory of sustainable, zero-waste businesse
 
 ### Shop Directory
 
-### calculator 
+### Calculator 
 
 Where customers can up the Carbon calculator to estimate how much of a carbon footprint they produce. 
 
