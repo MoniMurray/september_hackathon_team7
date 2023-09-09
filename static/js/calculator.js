@@ -71,6 +71,7 @@ function totalEmssion() {
   let sumResults = resultsNum.reduce((acc, curr) => acc + curr, 0).toFixed(2);
   for (ind in totResults) {
     document.getElementsByClassName("total-result")[ind].innerHTML = sumResults;
+    return sumResults
   }
 }
 
@@ -79,6 +80,7 @@ function totalEmssion() {
 function main() {
   emissionCalc();
   totalEmssion();
+  displayDiv();
 }
 
 // funcion to toggle between calulators
@@ -89,4 +91,19 @@ function toggleCalculator(id1, id2) {
 
   value1.style.display = "block";
   value2.style.display = "none";
+}
+
+// function to display different results
+function displayDiv() {
+  let result = Number(totalEmssion());
+  let units = Number(totals.value);
+  let low = 50000 / units;
+  let medium = 100000 / units;
+  if (result > 0 && result < low) {
+    console.log("Low");
+  } else if (result < medium) {
+    console.log("Medium");
+  } else {
+    console.log("Hight");
+  }
 }
