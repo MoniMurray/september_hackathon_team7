@@ -40,13 +40,8 @@
     or search by category, and take steps towards a zero-waste future.<br>
   </p>
 
-<!--Carbon footprint calculator-->  
-  <a href="{% url 'calculator' %}">
-    <button class="px-4 py-4 bg-yellow-300 text-center text-xl font-bold uppercase text-gray-800 shadow hover hover:bg-yellow-500 focus:bg-yellow-600 py-2 px-4 rounded-full">
-      Calculator
-    </button>
-  </a>
-    
+
+
   <p class="px-4 py-4">Estimate your annual carbon footprint by calculating 
     the carbon emissions from your food and plastic use.  
     Our handy, easy to use <a href="{% url 'calculator' %}">calculator</a>
@@ -58,6 +53,16 @@
   </p> 
 </div>
 
+<!--Carbon footprint calculator-->  
+<div class="m-auto flex max-w-4xl flex flex-row flex-wrap justify-evenly">
+  <h2 class="px-6 py-4 basis-1/2 text-center text-2xl text-gray-700">Calculate your Carbon Footprint</h2>
+  <a href="{% url 'calculator' %}">
+    <button class="my-2 block rounded-2xl bg-yellow-300 basis-1/2 px-6 py-4 text-center text-xl font-bold uppercase text-gray-800 shadow hover:bg-yellow-500 focus:bg-yellow-600">
+    Calculator
+    </button>
+  </a>
+</div>
+<br>
 
 <!-- Directory Dropdown Selection-->
 
