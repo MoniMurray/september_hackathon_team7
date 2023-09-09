@@ -2,7 +2,7 @@
 
 </h1>
 
-![Summer of Code Banner](https://res.cloudinary.com/djdefbnij/image/upload/v1693903105/Hackathons/Untitled_design_2_1_gzwakq.png)
+![SustainabiliTeam Banner](static/images/SustainabiliTeam-hack-banner.jpg)
 
 
  
@@ -33,21 +33,33 @@ WasteWizeWeb provides a map-based directory of sustainable, zero-waste businesse
 ## Features
 
 ### Landing Page
+![Landing page](static/images/hack-landing.jpg)
 
 ### Shop Directory
 
 ### Calculator 
 
 ### Login/Register 
+Where businesses and user can login and register for the website.
+
+![Login](static/images/login-sc.jpg)
 
 ### Map
+Google Map embedded to navigate user to nearest store.
+
+![Map](static/images/map-sc.jpg)
+
+## Future Features 
+These are items what we would like to add to the website given more time and knowledge.
+ - Google Map Api
+ - More calculator categories such as plastics
+ - Grouped and linked foods in the calculator
 
 ## Tech
 In the tech section, we provide information about the technology stack, dependencies, and any technical details related to the project.
 
-## Depolment 
+## Deployment 
 This project was deployed using [Herku](https://www.heroku.com/) and can be accessed at [this address](https://wastewizeweb-b57952658889.herokuapp.com/).
-
 
 **Languages:**
 * HTML
@@ -55,22 +67,18 @@ This project was deployed using [Herku](https://www.heroku.com/) and can be acce
 * JavaScript
 
 **Frameworks:**
-* Tailwind: CSS Framework for developing responsive and mobile-first websites.
+* Tailwind: CSS framework for developing responsive and mobile-first websites.
+* Django: JavaScript framework to build a responsive website.
   
-**Libraries:**
-
-**APIs:**
-* 
-
 **Host:** 
 * Herku
 
 ## Wireframes
 
-Wireframes for the Waste Wize Web page.
+Wireframes for the Waste Wize Web page 
+![Wireframe](static/images/desktop-wireframe.png)
 
 ## Colour Scheme
-
 The colour palate used for the website is 
 
 

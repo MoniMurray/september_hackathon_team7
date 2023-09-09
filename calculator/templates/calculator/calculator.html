@@ -18,15 +18,45 @@
 
 <!-- calculator -->
 
-<div class="px-4 pt-48 pb-16 h-72 bg-gradient-to-r  from-yellow-700 to-yellow-900 shadow caluclator about-caluculator ">
-	<h1 class="px-10 text-5xl font-bold pb-8 text-gray-200 "> Calculator</h1>
-	<p class='px-10 text-lg text-gray-300 leading-loose'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-		eiusmod tempor incididunt ut labore et
-		dolore magna aliqua. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Sed
-		libero enim sed faucibus turpis in. In tellus integer feugiat scelerisque. Vel fringilla est ullamcorper
-		eget nulla facilisi etiam.
+<div style="min-height:400px; " class="px-4 pt-48 pb-16 h-72 bg-gradient-to-r  from-yellow-700 to-yellow-900 shadow caluclator about-caluculator ">
+	<h1 class="px-10 text-5xl font-bold pb-8 text-gray-200 "> <i class="fas fa-calculator"></i> </i> Calculator</h1>
+	<p class='px-10 text-2xl text-gray-300 leading-loose'>How does what you eat impact the environment? 
 	</p>
+	
+</div class='px-4'>
+
+<div  class='px-4 flex flex-col flex-nowrap items-left justify-center'>
+	
+	<div style='max-width: 1200px'> 
+
+		<p  class='px-10 pt-16 text-lg text-gray-600 font-bold leading-loose'>
+			Calculate
+			your
+			favourite food and drink’s carbon footprint and find out what you could substitute to make a difference.
+		</p>
+		
+
+		<p class='px-10 md:pt-10 pt-16 text-lg text-gray-600 leading-loose'>
+			The food we eat makes up a sizable portion of our individual carbon footprint – depending on where you live
+			and
+			what you dine on, it can account for between 10-30% of your household’s greenhouse gas emissions. The entire
+			food system – which includes the production, packaging, transportation and disposal of everything we eat –
+			accounts for 21-37% of all human-produced greenhouse gas emissions. By 2050, our food could account for
+			almost
+			half of all carbon emissions released by human activity unless more steps are taken to reduce its
+			environmental
+			impact.
+		</p>
+		
+		<p class='px-10 pt-8 text-lg text-gray-600 leading-loose'>
+			If you want to find out how the food you eat and throw
+			away is
+			impacting the environment, then try our calculator below.
+		</p>
+
+	</div>
 </div>
+
 
 
 <div class="px-10 css-test">
@@ -35,7 +65,7 @@
 		<h2 class='pt-12 px-4 pb-8 text-3xl text-gray-600'> Food </h2>
 		<div id="holder" class='overflow-x-auto'>
 			<div class="calculator calculator-food relative overflow-x-auto " id="food">
-				<table class='table-auto w-full text-sm text-left text-gray-500 dark:text-gray-400 '>
+				<table id="calc-table" class='table-auto w-full text-sm text-left text-gray-500 dark:text-gray-400 '>
 					<thead class='text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400'>
 						<tr>
 							<th scope="col" class="px-6 py-3"></th>
@@ -52,7 +82,8 @@
 					<tbody>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 							<th scope="row"
-								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Milk</th>
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Milk
+							</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="shrink-0 numbers" aria-label="Weight in grams"
@@ -110,7 +141,8 @@
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 							<th scope="row"
-								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Cheese</th>
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Cheese
+							</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="shrink-0 numbers" aria-label="Weight in grams"
@@ -139,7 +171,8 @@
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 							<th scope="row"
-								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Vegan Cheese</th>
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Vegan
+								Cheese</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
@@ -225,7 +258,8 @@
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 							<th scope="row"
-								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Poultry
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+								Poultry
 							</th>
 							<td class="px-6 py-4">
 								<div>
@@ -254,7 +288,9 @@
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 							<th scope="row"
-								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">White Fish</th>
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">White
+								Fish
+							</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
@@ -282,7 +318,8 @@
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 							<th scope="row"
-								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Crustaceans
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+								Crustaceans
 							</th>
 							<td class="px-6 py-4">
 								<div>
@@ -311,7 +348,8 @@
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 							<th scope="row"
-								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Tuna</th>
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Tuna
+							</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
@@ -339,7 +377,8 @@
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 							<th scope="row"
-								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Meat Alternatives</th>
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Meat
+								Alternatives</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
@@ -367,7 +406,9 @@
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 							<th scope="row"
-								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Legumes</th>
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+								Legumes
+							</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
@@ -395,7 +436,8 @@
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 							<th scope="row"
-								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Breads</th>
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Breads
+							</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
@@ -423,7 +465,8 @@
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 							<th scope="row"
-								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Cakes</th>
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Cakes
+							</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
@@ -451,7 +494,9 @@
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 							<th scope="row"
-								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Pastries</th>
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+								Pastries
+							</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
@@ -479,7 +524,8 @@
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 							<th scope="row"
-								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Fruits</th>
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Fruits
+							</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
@@ -507,7 +553,9 @@
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 							<th scope="row"
-								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Vegetables</th>
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+								Vegetables
+							</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
@@ -535,7 +583,8 @@
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 							<th scope="row"
-								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Snacks</th>
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Snacks
+							</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
@@ -563,7 +612,9 @@
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 							<th scope="row"
-								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Chocolate Bars</th>
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+								Chocolate
+								Bars</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
@@ -591,7 +642,8 @@
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 							<th scope="row"
-								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Vegan Chocolate</th>
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Vegan
+								Chocolate</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
@@ -619,7 +671,8 @@
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 							<th scope="row"
-								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Rice & Pastas</th>
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Rice &
+								Pastas</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
@@ -647,7 +700,8 @@
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 							<th scope="row"
-								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Tea & Coffee</th>
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Tea &
+								Coffee</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
@@ -675,7 +729,9 @@
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 							<th scope="row"
-								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Alcoholic Drinks</th>
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+								Alcoholic
+								Drinks</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
@@ -703,7 +759,8 @@
 						</tr>
 						<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 							<th scope="row"
-								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Soft Drinks</th>
+								class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">Soft
+								Drinks</th>
 							<td class="px-6 py-4">
 								<div>
 									<input type="number" class="numbers" aria-label="Weight in grams" placeholder="0">
@@ -757,20 +814,39 @@
 				</table>
 			</div>
 
-			<div class="pb-40 calculator about-results">
-				<h2 class='py-8 px-4 text-4xl pb-8 text-gray-700'>Results</h2>
-				<p class='py-2 px-4 text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-					tempor incididunt ut labore et
-					dolore magna aliqua. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada.
-					Sed
-					libero enim sed faucibus turpis in. In tellus integer feugiat scelerisque. Vel fringilla est
-					ullamcorper
-					eget nulla facilisi etiam.
-				</p>
-			</div>
 	</section>
 </div>
 
+
+		<!--div class="flex items-center justify-center bg-gray-400 bg-food-image bg-center bg-blend-multiply"-->
+		<div class="flex items-center justify-center bg-gray-400 bg-hero-image bg-center bg-blend-multiply">
+			<div id="result-info" class="pb-40 calculator about-results">
+				<h2 class='pt-24  px-4 text-4xl pb-8 text-white font-bold'><i class="fas fa-recycle"></i> General advice on
+					how to reduce food emission</h2>
+				<p class='py-2 px-4 text-lg text-gray-100' style='line-height:1.5; max-width: 1200px'>According to the recent <a class="hover:text-yellow-700 text-yellow-300"
+						href="https://eatforum.org/content/uploads/2019/07/EAT-Lancet_Commission_Summary_Report.pdf"
+						target="_blank" aria-label="Link to Food, Planet and Health report.">EAT-Lancet
+						Commission</a> report on healthy,
+					sustainable diets, global consumption of fruits, vegetables, nuts and legumes will have to
+					double.
+					At the same time the amount of red meat and sugar will have to halve. Simply cutting meat and
+					dairy
+					products from their diet can reduce the carbon emissions from an individual’s foodprint by
+					two-thirds.
+
+					But some products can have surprisingly high levels of emissions. Rice production, for example,
+					leads to high levels of methane and nitrous oxide – both potent greenhouse gases – being emitted
+					into the atmosphere.
+
+					And the food you don’t eat is also important. Throwing away leftovers leads to potent greenhouse
+					gases being released into the atmosphere from landfill. According to researchers in Sweden, for
+					every 3kg of food thrown into the bin, the equivalent of 23kg of carbon dioxide is released as
+					methane gas into the atmosphere. According to one study from Italy, composting food can cut
+					those
+					emissions to just 14% while eating leftovers can cut it even further.
+				</p>
+			</div>
+		</div>
 <!-- <script src="{% static 'static/js/calculator.js' %}"></script> -->
 
 <!-- End Calculator -->
@@ -788,6 +864,7 @@
 
 <script src="{% static 'js/calculator.js' %}"></script>
 <link rel="stylesheet" href=" {% static 'css/style.css' %}" />
+<script src="https://kit.fontawesome.com/9aa342e9e5.js" crossorigin="anonymous"></script>
 
 
 {% endblock %}
