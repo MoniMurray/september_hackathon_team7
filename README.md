@@ -30,7 +30,7 @@ Consumers who are conscious about their effect on the environment around them. C
 - ➡️ Benefits
 WasteWizeWeb provides a map-based directory of sustainable, zero-waste businesses to facilitate consumers to shop with zero waste.
 
-## Feature(s
+## Features
 
 ### Landing Page
 ![Landing page](static/images/hack-landing.jpg)
