@@ -87,6 +87,8 @@
   </div>
 </div>
 
+
+{% for shop in shop_list %}
 <!-- Cards for the selected Shops-->
 <div class="max-w-6xl flex-wrap md:mx-auto md:flex md:justify-center">
   <!-- One Card-->
@@ -101,100 +103,9 @@
         <div class="flex justify-between px-4">
           <div class="">
             <h3 class="pb-1 pt-2 text-lg font-bold text-gray-800">
-              Zero Waste Shop 1
+              {{ shop.shop_name }}
             </h3>
-            <p class="text-md font-semibold text-gray-700">Location</p>
-          </div>
-          <div class="flex items-center justify-center">
-            <div class="bg-gray-300">
-              <img src="" alt="Profile Image of a shop" class="" />
-            </div>
-          </div>
-        </div>
-        <div class="px-4 py-2 text-gray-500">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo
-          optio iste adipisci pariatur saepe temporibus, amet sunt nihil maxime
-          iusto!
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Another Card just for testing. Eventually these cards would be rendered via django/jinja-->
-  <div class="mx-8 my-4 md:mx-4 md:w-1/3">
-    <div
-      class="flex w-full flex-col rounded-xl border-2 border-gray-300 bg-gray-200 shadow"
-    >
-      <div class="h-32 rounded-t-xl bg-gray-400">
-        <img src="" alt="Image of a shop" class="" />
-      </div>
-      <div>
-        <div class="flex justify-between px-4">
-          <div class="">
-            <h3 class="pb-1 pt-2 text-lg font-bold text-gray-800">
-              Zero Waste Shop 1
-            </h3>
-            <p class="text-md font-semibold text-gray-700">Location</p>
-          </div>
-          <div class="flex items-center justify-center">
-            <div class="bg-gray-300">
-              <img src="" alt="Profile Image of a shop" class="" />
-            </div>
-          </div>
-        </div>
-        <div class="px-4 py-2 text-gray-500">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo
-          optio iste adipisci pariatur saepe temporibus, amet sunt nihil maxime
-          iusto!
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Another Card just for testing. Eventually these cards would be rendered via django/jinja-->
-  <div class="mx-8 my-4 md:mx-4 md:w-1/3">
-    <div
-      class="flex w-full flex-col rounded-xl border-2 border-gray-300 bg-gray-200 shadow"
-    >
-      <div class="h-32 rounded-t-xl bg-gray-400">
-        <img src="" alt="Image of a shop" class="" />
-      </div>
-      <div>
-        <div class="flex justify-between px-4">
-          <div class="">
-            <h3 class="pb-1 pt-2 text-lg font-bold text-gray-800">
-              Zero Waste Shop 1
-            </h3>
-            <p class="text-md font-semibold text-gray-700">Location</p>
-          </div>
-          <div class="flex items-center justify-center">
-            <div class="bg-gray-300">
-              <img src="" alt="Profile Image of a shop" class="" />
-            </div>
-          </div>
-        </div>
-        <div class="px-4 py-2 text-gray-500">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo
-          optio iste adipisci pariatur saepe temporibus, amet sunt nihil maxime
-          iusto!
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Another Card just for testing. Eventually these cards would be rendered via django/jinja-->
-  <div class="mx-8 my-4 md:mx-4 md:w-1/3">
-    <div
-      class="flex w-full flex-col rounded-xl border-2 border-gray-300 bg-gray-200 shadow"
-    >
-      <div class="h-32 rounded-t-xl bg-gray-400">
-        <img src="" alt="Image of a shop" class="" />
-      </div>
-      <div>
-        <div class="flex justify-between px-4">
-          <div class="">
-            <h3 class="pb-1 pt-2 text-lg font-bold text-gray-800">
-              Zero Waste Shop 1
-            </h3>
-            <p class="text-md font-semibold text-gray-700">Location</p>
+            <p class="text-md font-semibold text-gray-700">{{ shop.locations }}</p>
           </div>
           <div class="flex items-center justify-center">
             <div class="bg-gray-300">
@@ -211,6 +122,8 @@
     </div>
   </div>
 </div>
+{% endfor %}
+
 
 <!-- The map where the selected shops would be displayed -->
 
