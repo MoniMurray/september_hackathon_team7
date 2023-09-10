@@ -80,7 +80,7 @@ function totalEmssion() {
 function main() {
   emissionCalc();
   totalEmssion();
-  // insertResult();
+  insertResult();
 }
 
 // funcion to toggle between calulators
@@ -102,35 +102,42 @@ function displayDiv() {
   let infoMessage = document.getElementById("result-info");
   let ecoMessage = document.getElementById("result-low");
   let medMessage = document.getElementById("result-medium");
-  let hiMessage = document.getElementById("result-medium");
-  if (resultKg < 10000) {
+  let hiMessage = document.getElementById("result-high");
+  if (resultKg > 0 && resultKg <= 10000) {
     infoMessage.style.display = "none";
+    medMessage.style.display = "none";
+    hiMessage.style.display = "none";
     ecoMessage.style.display = "block";
-  } else if (resultKg < 17500) {
+    return resultKg;
+  } else if (resultKg > 10000 && resultKg <= 15000) {
     infoMessage.style.display = "none";
     ecoMessage.style.display = "none";
-    medMessage.style.display = "block";
     hiMessage.style.display = "none";
-  } else {
+    medMessage.style.display = "block";
+    return resultKg;
+  } else if ( resultKg > 15000) {
     infoMessage.style.display = "none";
     ecoMessage.style.display = "none";
     medMessage.style.display = "none";
     hiMessage.style.display = "block";
+    return resultKg;
+  } else {
+    medMessage.style.display = "none";
+    hiMessage.style.display = "none";
+    ecoMessage.style.display = "none";
+    infoMessage.style.display = "block";
   }
-  return resultKg;
 }
 
 // function to insert result into user message
 
 function insertResult() {
   let resultKg = displayDiv().toFixed(2);
-  let span = document.getElementsByClassName("emission-result");
+  let span = document.getElementsByClassName("emission-result-post");
   for (ind in span) {
     span[ind].innerHTML = resultKg;
   }
   // span[0].innerHTML = resultKg;
   
 }
-
-
 
