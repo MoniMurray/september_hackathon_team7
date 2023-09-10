@@ -137,7 +137,5 @@ function insertResult() {
   for (ind in span) {
     span[ind].innerHTML = resultKg;
   }
-  // span[0].innerHTML = resultKg;
-  
 }
 
