@@ -67,4 +67,5 @@ a {
 
   .italic {
     font-style: italic;
+    font-weight: bold;
   }
